@@ -1,0 +1,167 @@
+/*! Melanie Boncaro 
+ *  Portfolio main style
+ *  09/28/2023 */
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+button {
+  margin-top: 24px;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+}
+
+/*! Hide things only on home page */
+.home_body {
+  overflow: hidden;
+}
+.home_body #name_link {
+  visibility: hidden;
+}
+.home_body #work_link {
+  visibility: hidden;
+}
+
+/*! Grid Nonsense */
+.home_wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-rows: 40px 1fr 2fr 40px;
+  grid-template-areas: ". . ." ". header ." "work work work" " . . .";
+}
+
+.header {
+  grid-area: header;
+}
+.header h1 {
+  margin-bottom: 0;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  text-decoration: none;
+  color: #a7a7a7;
+  font-weight: 400;
+  transition: 200ms ease;
+}
+.navbar a:hover {
+  font-weight: 500;
+  color: #000000;
+}
+
+#about_link, #contact_link {
+  padding-left: 20px;
+}
+
+/*! Scrollable work section on home/work page */
+.work_collection {
+  grid-area: work;
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  padding: 16px 0 16px 0;
+  overflow: scroll;
+  scrollbar-width: thin;
+}
+.work_collection div:not(:first-child, :last-child) {
+  /*! avoids spacer divs */
+  background-color: lightblue;
+  min-width: 250px;
+  width: 100%;
+  border-radius: 16px;
+  background-position: center center;
+  transition: 200ms ease;
+}
+.work_collection div:not(:first-child, :last-child):hover {
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4039215686);
+  translate: 0 -10px;
+}
+.work_collection .spacer {
+  width: 8px;
+  flex-shrink: 0;
+}
+.work_collection a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.work_collection h2 {
+  writing-mode: sideways-lr;
+  font-weight: 600;
+  padding-bottom: 32px;
+}
+.work_collection #dq_card {
+  background-image: url("/assets/dq/dq_card.png");
+  background-color: #3FA3DF;
+  background-size: cover;
+  background-position: left center;
+  overflow: hidden;
+}
+.work_collection #dq_card a {
+  color: #fff;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
+}
+.work_collection #id_card {
+  background-image: url("/assets/id_card.png");
+  background-color: #536375;
+  background-size: cover;
+  background-position: left center;
+  overflow: hidden;
+}
+.work_collection #id_card a {
+  color: #fff;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
+}
+.work_collection #webster_card {
+  background-image: url("/assets/webster_mockup.png");
+  background-size: cover;
+}
+.work_collection #webster_card a {
+  color: #000;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2431372549);
+}
+.work_collection #quill_card {
+  background-image: url("/assets/quill_card.png");
+  background-color: #85CACD;
+  background-size: cover;
+}
+.work_collection #quill_card a {
+  color: #000;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2431372549);
+}
+.work_collection #swirl_card {
+  background-image: linear-gradient(rgba(251, 204, 85, 0.8745098039), rgba(255, 196, 47, 0.9568627451)), url("/assets/swirl_letters.png");
+  background-color: #fbcc55;
+  background-size: cover;
+}
+.work_collection #swirl_card a {
+  color: #000;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2431372549);
+}
+
+@media screen and (max-width: 600px) {
+  .home_wrapper {
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 20px 1fr 2fr 20px;
+  }
+  .header h1 {
+    margin-top: 32px;
+    font-size: 56px;
+  }
+  .work_collection {
+    gap: 20px;
+  }
+  .work_collection .spacer {
+    width: 1px;
+  }
+}/*# sourceMappingURL=style.css.map */
