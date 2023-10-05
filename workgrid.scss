@@ -1,0 +1,139 @@
+/*! Melanie Boncaro
+    Grid layout for portfolio work pages.
+ */
+
+/*! DQ grid */
+.dq_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "head_img head_txt"
+        "spacer1 spacer2"
+        "img1 txt1"
+        "img2 txt2"
+        "img3 txt3"
+        "img4 txt4"
+        "img5 txt5"
+        "img6 txt6"
+        "img7 txt7"
+        "end_img end_txt";
+
+    .work_banner {grid-area: head_img;}
+    .work_header {grid-area: head_txt;}
+
+    #spacer1 {grid-area: spacer1;}
+    #spacer2 {grid-area: spacer2;}
+
+    #overview_img {grid-area: img1;}
+    #overview_txt {grid-area: txt1;}
+
+    #he_img {grid-area: img2;}
+    #he_txt {grid-area: txt2;}
+
+    #flow_img {grid-area: img3;}
+    #flow_txt {grid-area: txt3;}
+
+    #mockup_img {grid-area: img4;}
+    #mockup_txt {grid-area: txt4;}
+
+    #wire_img {grid-area: img5;}
+    #wire_txt {grid-area: txt5;}
+
+    #final_img {grid-area: img6;}
+    #final-txt {grid-area: txt6;}
+
+    #prototype_img {grid-area: img7;}
+    #prototype_txt {grid-area: txt7;}
+
+    #end_img {grid-area: end_img;}
+    #end_txt {grid-area: end_txt;}
+}
+
+
+
+/*! Digital ID grid */
+.id_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "head_img head_txt"
+        "spacer1 spacer2"
+        "img1 txt1"
+        "img2 txt2"
+        "img3 txt3"
+        "img4 txt4"
+        "img5 txt5"
+        "img6 txt6"
+        "img7 txt7"
+        "end_img end_txt";
+    
+    .work_banner {grid-area: head_img;}
+    .work_header {grid-area: head_txt;}
+    
+    #spacer1 {grid-area: spacer1;}
+    #spacer2 {grid-area: spacer2;}
+    
+    #overview_img {grid-area: img1;}
+    #overview_txt {grid-area: txt1;}
+    
+    #vd_img {grid-area: img2;}
+    #vd_txt {grid-area: txt2;}
+    
+    #sketches_img {grid-area: img3;}
+    #sketches_txt {grid-area: txt3;}
+    
+    #wire_img {grid-area: img4;}
+    #wire_txt {grid-area: txt4;}
+    
+    #iter_img {grid-area: img5;}
+    #iter_txt {grid-area: txt5;}
+    
+    #final_img {grid-area: img6;}
+    #final-txt {grid-area: txt6;}
+    
+    #prototype_img {grid-area: img7;}
+    #prototype_txt {grid-area: txt7;}
+    
+    #end_img {grid-area: end_img;}
+    #end_txt {grid-area: end_txt;}
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .dq_wrapper, .id_wrapper {
+        .spacer {
+            display: none;
+        }
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "head_txt"
+            "head_img"
+            "spacer1"
+            "spacer2"
+
+            "txt1"
+            "img1"
+
+            "txt2"
+            "img2"
+
+            "txt3"
+            "img3"
+
+            "txt4"
+            "img4"
+
+            "txt5"
+            "img5"
+
+            "txt6"
+            "img6"
+
+            "txt7"
+            "img7"
+            
+            "end_txt"
+            "end_img";
+    }
+}

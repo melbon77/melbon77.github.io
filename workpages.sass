@@ -1,0 +1,158 @@
+/*! Melanie Boncaro - 2023
+    Style for portfolio work pages
+ */
+
+.back_btn
+    position: fixed
+    top: 24px
+    right: 24px
+    z-index: 3
+    font-size: 28px
+    // background-color: #ffffffb4
+    border-radius: 100px
+
+    div
+        width: 48px
+        height: 48px
+        display: flex
+        justify-content: center
+
+    a
+        width: 100%
+        text-decoration: none
+        color: #000
+
+
+.work_wrapper
+    padding: 40px
+    // display: grid
+    // grid-template-columns: 1fr 1fr
+
+    h1
+        font-size: 48px
+        margin-bottom: 8px
+    h2
+        font-size: 32px
+        font-weight: 400
+    h3
+        font-size: 18px
+        font-weight: 400
+        margin-top: 0
+        color: #a4a4a4
+
+    // .spacer
+    //     height: 100px
+
+.work_header, .work_banner
+    height: 90vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.work_header, .work_desc
+    padding-left: 40px
+
+.work_banner
+    background-position: center
+    background-size: cover
+    border-radius: 16px 16px 0 0
+
+
+.work_desc, .content
+    padding-block: 150px
+
+.content
+    // background-color: #c9e0ee
+    background-color: #3FA3DF
+    // padding-top: 100px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 16px
+    
+    img, video
+        // max-width: 100%
+        // max-height: 100%
+        width: 90%
+        // height: 100%
+        border-radius: 8px
+        // object-fit: contain
+        // padding-inline: 20px
+    
+    .shadow
+            box-shadow: 0 2px 8px #00000063
+
+    .gallery
+        display: flex
+        flex-direction: row
+        justify-content: center
+        gap: 16px
+        padding-inline: 16px
+        img
+            width: 45%
+
+/*! Heuristic images positioning */
+#h_preview1
+    width: 70%
+    position: relative
+    left: -10%
+
+#h_preview2
+    width: 70%
+    position: relative
+    top: -30%
+    right: -10%
+
+.end_cap
+    border-radius: 0 0 16px 16px
+    background-size: cover
+    // transform: rotate(180deg)
+
+.footer
+    display: flex
+    justify-content: center
+    padding: 32px 40px
+    text-align: center
+
+/*! Custom colors for work pages */
+.dq_wrapper
+    .work_banner
+        background-image: url("/assets/dq/dq_banner.png")
+        background-color: #3FA3DF
+    .end_cap
+        background-color: #3FA3DF
+        background-image: url("/assets/dq/wavylines.png")
+
+.id_wrapper
+    .work_banner
+        background-image: linear-gradient(#53637500 85%, #536375), url("/assets/id/id_banner.png")
+        background-color: #536375
+    .content
+        background-color: #536375
+    .end_cap
+        background-image: linear-gradient(#536375, #53637500, #53637500), url("/assets/id/id_pattern.png")
+        background-color: #536375
+        background-position: bottom
+
+
+@media screen and (max-width: 800px)
+    .work_wrapper
+        grid-template-columns: 1fr
+        padding: 24px
+    .work_banner
+        border-radius: 16px
+    .work_header
+        padding: 0
+    .work_desc
+        padding-bottom: 0
+        padding-left: 0
+        padding: 150px 0 32px 0
+    .content
+        border-radius: 16px
+        padding-block: 20px
+
+@media screen and (min-width: 1200px)
+    .work_desc, .work_header
+        padding-inline: 100px 200px
+    .content
+        gap: 32px

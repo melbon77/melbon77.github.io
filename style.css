@@ -58,7 +58,7 @@ button {
   color: #000000;
 }
 
-#about_link, #contact_link {
+#about_link, #contact_link, #resume_link {
   padding-left: 20px;
 }
 
@@ -101,7 +101,7 @@ button {
   padding-bottom: 32px;
 }
 .work_collection #dq_card {
-  background-image: url("/assets/dq/dq_card.png");
+  background-image: url("/assets/dq_card.webp");
   background-color: #3FA3DF;
   background-size: cover;
   background-position: left center;
@@ -112,7 +112,7 @@ button {
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
 }
 .work_collection #id_card {
-  background-image: url("/assets/id_card.png");
+  background-image: url("/assets/id_card.webp");
   background-color: #536375;
   background-size: cover;
   background-position: left center;
@@ -123,7 +123,7 @@ button {
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
 }
 .work_collection #webster_card {
-  background-image: url("/assets/webster_mockup.png");
+  background-image: url("/assets/webster_mockup.webp");
   background-size: cover;
 }
 .work_collection #webster_card a {
@@ -140,7 +140,7 @@ button {
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2431372549);
 }
 .work_collection #swirl_card {
-  background-image: linear-gradient(rgba(251, 204, 85, 0.8745098039), rgba(255, 196, 47, 0.9568627451)), url("/assets/swirl_letters.png");
+  background-image: linear-gradient(rgba(251, 204, 85, 0.8745098039), rgba(255, 196, 47, 0.9568627451)), url("/assets/swirl_letters.webp");
   background-color: #fbcc55;
   background-size: cover;
 }

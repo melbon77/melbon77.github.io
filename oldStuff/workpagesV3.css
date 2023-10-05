@@ -5,24 +5,17 @@
   position: fixed;
   top: 24px;
   right: 24px;
-  z-index: 3;
-  font-size: 28px;
-  border-radius: 100px;
-}
-.back_btn div {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
+  font-size: 24px;
 }
 .back_btn a {
-  width: 100%;
   text-decoration: none;
   color: #000;
 }
 
 .work_wrapper {
   padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .work_wrapper h1 {
   font-size: 48px;
@@ -51,8 +44,10 @@
 }
 
 .work_banner {
+  background-image: url("/assets/dq/dq_banner.png");
   background-position: center;
   background-size: cover;
+  background-color: #3FA3DF;
   border-radius: 16px 16px 0 0;
 }
 
@@ -67,22 +62,12 @@
   justify-content: center;
   gap: 16px;
 }
-.content img, .content video {
+.content img {
   width: 90%;
   border-radius: 8px;
 }
 .content .shadow {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3882352941);
-}
-.content .gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 16px;
-  padding-inline: 16px;
-}
-.content .gallery img {
-  width: 45%;
 }
 
 /*! Heuristic images positioning */
@@ -100,55 +85,21 @@
 }
 
 .end_cap {
-  border-radius: 0 0 16px 16px;
-  background-size: cover;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  padding: 32px 40px;
-  text-align: center;
-}
-
-/*! Custom colors for work pages */
-.dq_wrapper .work_banner {
-  background-image: url("/assets/dq/dq_banner.png");
-  background-color: #3FA3DF;
-}
-.dq_wrapper .end_cap {
   background-color: #3FA3DF;
   background-image: url("/assets/dq/wavylines.png");
-}
-
-.id_wrapper .work_banner {
-  background-image: linear-gradient(rgba(83, 99, 117, 0) 85%, #536375), url("/assets/id/id_banner.png");
-  background-color: #536375;
-}
-.id_wrapper .content {
-  background-color: #536375;
-}
-.id_wrapper .end_cap {
-  background-image: linear-gradient(#536375, rgba(83, 99, 117, 0), rgba(83, 99, 117, 0)), url("/assets/id/id_pattern.png");
-  background-color: #536375;
-  background-position: bottom;
+  border-radius: 0 0 16px 16px;
+  background-size: cover;
 }
 
 @media screen and (max-width: 800px) {
   .work_wrapper {
     grid-template-columns: 1fr;
-    padding: 24px;
   }
   .work_banner {
     border-radius: 16px;
   }
-  .work_header {
-    padding: 0;
-  }
   .work_desc {
     padding-bottom: 0;
-    padding-left: 0;
-    padding: 150px 0 32px 0;
   }
   .content {
     border-radius: 16px;
@@ -162,4 +113,4 @@
   .content {
     gap: 32px;
   }
-}/*# sourceMappingURL=workpages.css.map */
+}/*# sourceMappingURL=workpagesV3.css.map */
