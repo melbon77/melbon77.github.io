@@ -104,13 +104,6 @@
   background-size: cover;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  padding: 32px 40px;
-  text-align: center;
-}
-
 /*! Custom colors for work pages */
 .dq_wrapper .work_banner {
   background-image: url("/assets/dq/dq_banner.png");
@@ -132,6 +125,17 @@
   background-image: linear-gradient(#536375, rgba(83, 99, 117, 0), rgba(83, 99, 117, 0)), url("/assets/id/id_pattern.png");
   background-color: #536375;
   background-position: bottom;
+}
+
+.swirl_wrapper .work_banner {
+  background-image: linear-gradient(rgba(255, 191, 31, 0.8705882353), #fff3d5), url("/assets/swirl_letters.webp");
+  background-color: #fff3d5;
+}
+.swirl_wrapper .content {
+  background-color: #fff3d5;
+}
+.swirl_wrapper .end_cap {
+  background-image: linear-gradient(#fff3d5, rgba(255, 191, 31, 0.8705882353)), url("/assets/swirl_letters.webp");
 }
 
 @media screen and (max-width: 800px) {
