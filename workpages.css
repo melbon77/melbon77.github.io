@@ -138,6 +138,13 @@
   background-image: linear-gradient(#fff3d5, rgba(255, 191, 31, 0.8705882353)), url("/assets/swirl_letters.webp");
 }
 
+.webster_wrapper .work_banner {
+  background-color: #72bfd4;
+}
+.webster_wrapper .content {
+  background-color: #72bfd4;
+}
+
 @media screen and (max-width: 800px) {
   .work_wrapper {
     grid-template-columns: 1fr;
