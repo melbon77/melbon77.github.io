@@ -160,6 +160,9 @@ p {
   padding: 32px 40px;
   text-align: center;
 }
+.footer p, .footer a {
+  font-size: 14px;
+}
 
 @media screen and (max-width: 600px) {
   .home_wrapper {
