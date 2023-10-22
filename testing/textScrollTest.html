@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text on Scroll Test</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="jquery.inview-master/jquery.inview.min.js"></script>
+    <script type="module" src="test.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            height: 120vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "one text" "two ." "three ." "four .";
+        }
+        #text_holder {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        #text_section {
+            position: fixed;
+            /* top: 45%; */
+        }
+        #stuff {
+            background-color: aliceblue;
+        }
+
+        #stuff {grid-area: one;}
+        #more_stuff {grid-area: two;}
+        #third {grid-area: three;}
+        #fourth {grid-area: four;}
+    </style>
+</head>
+<body>
+    <script>
+        // $(function() {
+        //     document.getElementById('text_section').innerHTML = "<h1>new</h1>"
+        // });
+
+        // function changeThing() {
+        //     if (document.body.scrollTop > 2) {
+        //         document.getElementById('text_section').innerHTML = "<h1>you scrolled</h1>"
+        //     }
+        // };
+
+
+        $(function() {
+            $("#text_section").html("<h1>Hello</h1>");
+        });
+
+        $(window).on("scroll", function() {
+            let topOfElement = $("#stuff").offset().top;
+            let bottomOfElement = $("#stuff").offset().top + $("#stuff").outerHeight();
+            let topOfView = $(window).scrollTop();
+            let bottomOfView = $(window).scrollTop() + $(window).innerHeight();
+            // console.log(topOfElement, bottomOfElement, topOfView, bottomOfView);
+            console.log(topOfElement);
+            // when top of element in halfway up from bottom of view
+            let halfwayFromBottom = bottomOfView - (bottomOfView / 2);
+            console.log(halfwayFromBottom + " > " + topOfElement);
+            console.log(topOfView + " < " + bottomOfElement);
+            if (halfwayFromBottom > topOfElement && topOfView < bottomOfElement) {
+                // console.log("first")
+                $("#text_section").html("<h1>First Section</h1>");
+            } //else if () {
+
+            //}
+            
+            else {
+                // console.log("second")
+                $("#text_section").html("<h1>Second Section</h1>");
+            }
+        });
+
+        $(function() {
+            // let response = fetch("projectData.json");
+            // let projectData = response.json();
+
+            // console.log(response);
+
+            // let request = new Request("projectData.json")
+            // let response = fetch(request);
+            // let projectData = JSON.parse("projectData.json")
+
+        })
+
+        // async function populate() {
+        //     let request = new Request("projectData.json")
+        //     let response
+        // }
+
+    </script>
+
+    <div id="stuff">
+        <h2>some more stuff</h2>
+        <p>
+            By now you should be quite happy about what's happening here. That's a son of a gun of a cloud. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen.
+            It's so important to do something every day that will make you happy. That is when you can experience true joy, when you have no fear. Tree trunks grow however makes them happy. Give him a friend, we forget the trees get lonely too. This is unplanned it really just happens.
+            I thought today we would do a happy little picture. And maybe a little bush lives there. We'll paint one happy little tree right here. Maybe there's a happy little Evergreen that lives here. Talent is a pursued interest. That is to say, anything you practice you can do. Use absolutely no pressure. Just like an angel's wing.
+            Now we'll take the almighty fan brush. We'll play with clouds today. Let your imagination be your guide. There's not a thing in the world wrong with washing your brush. Be careful. You can always add more - but you can't take it away. Isn't that fantastic that you can create an almighty tree that fast?
+            Be so very light. Be a gentle whisper. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. We'll throw some happy little limbs on this tree. Let's make a nice big leafy tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Happy painting, God bless.
+            Just think about these things in your mind - then bring them into your world. Let's put some happy trees and bushes back in here. In your world you have total and absolute power.
+            You have to allow the paint to break to make it beautiful. You can create beautiful things - but you have to see them in your mind first. It's cold, but it's beautiful. There is no right or wrong - as long as it makes you happy and doesn't hurt anyone. Work that paint. I think there's an artist hidden in the bottom of every single one of us.
+        </p>
+    </div>
+
+    <div id="text_holder">
+        <div id="text_section">
+            The text that will be changed
+        </div>
+    </div>
+
+    <div id="more_stuff">
+        <p>
+            By now you should be quite happy about what's happening here. That's a son of a gun of a cloud. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen.
+            It's so important to do something every day that will make you happy. That is when you can experience true joy, when you have no fear. Tree trunks grow however makes them happy. Give him a friend, we forget the trees get lonely too. This is unplanned it really just happens.
+            I thought today we would do a happy little picture. And maybe a little bush lives there. We'll paint one happy little tree right here. Maybe there's a happy little Evergreen that lives here. Talent is a pursued interest. That is to say, anything you practice you can do. Use absolutely no pressure. Just like an angel's wing.
+            Now we'll take the almighty fan brush. We'll play with clouds today. Let your imagination be your guide. There's not a thing in the world wrong with washing your brush. Be careful. You can always add more - but you can't take it away. Isn't that fantastic that you can create an almighty tree that fast?
+            Be so very light. Be a gentle whisper. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. We'll throw some happy little limbs on this tree. Let's make a nice big leafy tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Happy painting, God bless.
+            Just think about these things in your mind - then bring them into your world. Let's put some happy trees and bushes back in here. In your world you have total and absolute power.
+            You have to allow the paint to break to make it beautiful. You can create beautiful things - but you have to see them in your mind first. It's cold, but it's beautiful. There is no right or wrong - as long as it makes you happy and doesn't hurt anyone. Work that paint. I think there's an artist hidden in the bottom of every single one of us.
+        </p>
+    </div>
+
+    <div id="third">
+        <p>
+            By now you should be quite happy about what's happening here. That's a son of a gun of a cloud. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen.
+            It's so important to do something every day that will make you happy. That is when you can experience true joy, when you have no fear. Tree trunks grow however makes them happy. Give him a friend, we forget the trees get lonely too. This is unplanned it really just happens.
+            I thought today we would do a happy little picture. And maybe a little bush lives there. We'll paint one happy little tree right here. Maybe there's a happy little Evergreen that lives here. Talent is a pursued interest. That is to say, anything you practice you can do. Use absolutely no pressure. Just like an angel's wing.
+            Now we'll take the almighty fan brush. We'll play with clouds today. Let your imagination be your guide. There's not a thing in the world wrong with washing your brush. Be careful. You can always add more - but you can't take it away. Isn't that fantastic that you can create an almighty tree that fast?
+            Be so very light. Be a gentle whisper. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. We'll throw some happy little limbs on this tree. Let's make a nice big leafy tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Happy painting, God bless.
+            Just think about these things in your mind - then bring them into your world. Let's put some happy trees and bushes back in here. In your world you have total and absolute power.
+            You have to allow the paint to break to make it beautiful. You can create beautiful things - but you have to see them in your mind first. It's cold, but it's beautiful. There is no right or wrong - as long as it makes you happy and doesn't hurt anyone. Work that paint. I think there's an artist hidden in the bottom of every single one of us.
+        </p>
+    </div>
+    <div id="fourth">
+        <p>
+            By now you should be quite happy about what's happening here. That's a son of a gun of a cloud. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen.
+            It's so important to do something every day that will make you happy. That is when you can experience true joy, when you have no fear. Tree trunks grow however makes them happy. Give him a friend, we forget the trees get lonely too. This is unplanned it really just happens.
+            I thought today we would do a happy little picture. And maybe a little bush lives there. We'll paint one happy little tree right here. Maybe there's a happy little Evergreen that lives here. Talent is a pursued interest. That is to say, anything you practice you can do. Use absolutely no pressure. Just like an angel's wing.
+            Now we'll take the almighty fan brush. We'll play with clouds today. Let your imagination be your guide. There's not a thing in the world wrong with washing your brush. Be careful. You can always add more - but you can't take it away. Isn't that fantastic that you can create an almighty tree that fast?
+            Be so very light. Be a gentle whisper. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. We'll throw some happy little limbs on this tree. Let's make a nice big leafy tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Happy painting, God bless.
+            Just think about these things in your mind - then bring them into your world. Let's put some happy trees and bushes back in here. In your world you have total and absolute power.
+            You have to allow the paint to break to make it beautiful. You can create beautiful things - but you have to see them in your mind first. It's cold, but it's beautiful. There is no right or wrong - as long as it makes you happy and doesn't hurt anyone. Work that paint. I think there's an artist hidden in the bottom of every single one of us.
+        </p>
+    </div>
+
+
+
+    
+</body>
+</html>

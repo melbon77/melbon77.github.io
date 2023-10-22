@@ -1,0 +1,28 @@
+{
+    "name": "DQ Kiosk",
+    "sectionData": [
+        {
+            "overview": [
+                "<h2>Overview</h2>",
+                "<p><b>Timeline:&nbsp;</b>15 weeks</p>",
+                "<p><b>Tools:&nbsp;</b>Figma, Illustrator</p>",
+                "<button onclick=\"location.href='https://drive.google.com/file/d/1mISm2MXHr2RtWAkNE5cMDVluY7PEieM8/view?usp=sharing'\" type=\"button\"><b>View Process Deck</b> (Google Drive PDF)</button>"
+            ]
+        },
+        {
+            "heuristicEvaluation": [
+                "<h2>Heuristic Evaluation</h2>",
+                "<p>I tested kiosks in competing restaurants to find successful elements as well as common pitfalls.</p>",
+                "<p>I looked at kiosks at Taco Bell, Panera Bread, McDonald's, and took a deep-dive into <b>Crumbl Cookies.</b></p>",
+                "<button onclick=\"location.href='https://drive.google.com/file/d/1EHBAdNv4huxKMqX3LKJINT5wjDuRu9ZN/view?usp=share_link'\" type=\"button\"><b>View Heuristic Evaluation</b> (Google Drive PDF)</button>"
+            ]
+        },
+        {
+            "workflow": [
+                "<h2>Workflow</h2>",
+                "<p>Any <b>choices</b> a user may need to take were organized into work flows.</p>",
+                "<p>This informed what <b>screens</b> would be needed in the design.</p>"
+            ]
+        }
+    ]
+}
