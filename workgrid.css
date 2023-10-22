@@ -270,11 +270,11 @@
 }
 
 @media screen and (max-width: 800px) {
-  .dq_wrapper, .id_wrapper {
+  .dq_wrapper, .id_wrapper, .swirl_wrapper {
     grid-template-columns: 1fr;
     grid-template-areas: "head_txt" "head_img" "spacer1" "spacer2" "txt1" "img1" "txt2" "img2" "txt3" "img3" "txt4" "img4" "txt5" "img5" "txt6" "img6" "txt7" "img7" "end_txt" "end_img";
   }
-  .dq_wrapper .spacer, .id_wrapper .spacer {
+  .dq_wrapper .spacer, .id_wrapper .spacer, .swirl_wrapper .spacer {
     display: none;
   }
 }/*# sourceMappingURL=workgrid.css.map */
