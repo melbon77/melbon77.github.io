@@ -209,6 +209,54 @@
   grid-area: end_txt;
 }
 
+.quill_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "head_img head_txt" "spacer1 spacer2" "img1 txt1" "img2 txt2" "img3 txt3" "img4 txt4" "end_img end_txt";
+}
+.quill_wrapper .work_banner {
+  grid-area: head_img;
+}
+.quill_wrapper .work_header {
+  grid-area: head_txt;
+}
+.quill_wrapper #spacer1 {
+  grid-area: spacer1;
+}
+.quill_wrapper #spacer2 {
+  grid-area: spacer2;
+}
+.quill_wrapper #overview_img {
+  grid-area: img1;
+}
+.quill_wrapper #overview_txt {
+  grid-area: txt1;
+}
+.quill_wrapper #wire_img {
+  grid-area: img2;
+}
+.quill_wrapper #wire_txt {
+  grid-area: txt2;
+}
+.quill_wrapper #final_img {
+  grid-area: img3;
+}
+.quill_wrapper #final_txt {
+  grid-area: txt3;
+}
+.quill_wrapper #style_img {
+  grid-area: img4;
+}
+.quill_wrapper #style_txt {
+  grid-area: txt4;
+}
+.quill_wrapper #end_img {
+  grid-area: end_img;
+}
+.quill_wrapper #end_txt {
+  grid-area: end_txt;
+}
+
 @media screen and (max-width: 800px) {
   .dq_wrapper, .id_wrapper, .swirl_wrapper {
     grid-template-columns: 1fr;
