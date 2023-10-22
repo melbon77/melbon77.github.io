@@ -52,7 +52,7 @@
 
 
 /*! Digital ID grid */
-.id_wrapper {
+.id_wrapper, .swirl_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -99,51 +99,51 @@
 }
 
 /*! Swirl grid */
-.swirl_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "head_img head_txt"
-        "spacer1 spacer2"
-        "img1 txt1"
-        "img2 txt2"
-        "img3 txt3"
-        "img4 txt4"
-        "img5 txt5"
-        "img6 txt6"
-        "img7 txt7"
-        "end_img end_txt";
+// .swirl_wrapper {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-areas: 
+//         "head_img head_txt"
+//         "spacer1 spacer2"
+//         "img1 txt1"
+//         "img2 txt2"
+//         "img3 txt3"
+//         "img4 txt4"
+//         "img5 txt5"
+//         "img6 txt6"
+//         "img7 txt7"
+//         "end_img end_txt";
     
-    .work_banner {grid-area: head_img;}
-    .work_header {grid-area: head_txt;}
+//     .work_banner {grid-area: head_img;}
+//     .work_header {grid-area: head_txt;}
     
-    #spacer1 {grid-area: spacer1;}
-    #spacer2 {grid-area: spacer2;}
+//     #spacer1 {grid-area: spacer1;}
+//     #spacer2 {grid-area: spacer2;}
     
-    #overview_img {grid-area: img1;}
-    #overview_txt {grid-area: txt1;}
+//     #overview_img {grid-area: img1;}
+//     #overview_txt {grid-area: txt1;}
     
-    #vd_img {grid-area: img2;}
-    #vd_txt {grid-area: txt2;}
+//     #vd_img {grid-area: img2;}
+//     #vd_txt {grid-area: txt2;}
     
-    #sketches_img {grid-area: img3;}
-    #sketches_txt {grid-area: txt3;}
+//     #sketches_img {grid-area: img3;}
+//     #sketches_txt {grid-area: txt3;}
     
-    #wire_img {grid-area: img4;}
-    #wire_txt {grid-area: txt4;}
+//     #wire_img {grid-area: img4;}
+//     #wire_txt {grid-area: txt4;}
     
-    #iter_img {grid-area: img5;}
-    #iter_txt {grid-area: txt5;}
+//     #iter_img {grid-area: img5;}
+//     #iter_txt {grid-area: txt5;}
     
-    #final_img {grid-area: img6;}
-    #final-txt {grid-area: txt6;}
+//     #final_img {grid-area: img6;}
+//     #final-txt {grid-area: txt6;}
     
-    #prototype_img {grid-area: img7;}
-    #prototype_txt {grid-area: txt7;}
+//     #prototype_img {grid-area: img7;}
+//     #prototype_txt {grid-area: txt7;}
     
-    #end_img {grid-area: end_img;}
-    #end_txt {grid-area: end_txt;}
-}
+//     #end_img {grid-area: end_img;}
+//     #end_txt {grid-area: end_txt;}
+// }
 
 /*! Webster Redesign grid */
 .webster_wrapper {
@@ -159,6 +159,7 @@
         "img5 txt5"
         "img6 txt6"
         "img7 txt7"
+        "img8 txt8"
         "end_img end_txt";
     
     .work_banner {grid-area: head_img;}
@@ -170,23 +171,26 @@
     #overview_img {grid-area: img1;}
     #overview_txt {grid-area: txt1;}
     
-    #vd_img {grid-area: img2;}
-    #vd_txt {grid-area: txt2;}
+    #problems_img {grid-area: img2;}
+    #problems_txt {grid-area: txt2;}
     
-    #sketches_img {grid-area: img3;}
-    #sketches_txt {grid-area: txt3;}
+    #goals_img {grid-area: img3;}
+    #goals_txt {grid-area: txt3;}
     
-    #wire_img {grid-area: img4;}
-    #wire_txt {grid-area: txt4;}
+    #userjourney_img {grid-area: img4;}
+    #userjourney_txt {grid-area: txt4;}
     
-    #iter_img {grid-area: img5;}
-    #iter_txt {grid-area: txt5;}
+    #vd_img {grid-area: img5;}
+    #vd_txt {grid-area: txt5;}
     
-    #final_img {grid-area: img6;}
-    #final-txt {grid-area: txt6;}
+    #wire_img {grid-area: img6;}
+    #wire_txt {grid-area: txt6;}
+
+    #final_img {grid-area: img7;}
+    #final_txt {grid-area: txt7;}
     
-    #prototype_img {grid-area: img7;}
-    #prototype_txt {grid-area: txt7;}
+    #prototype_img {grid-area: img8;}
+    #prototype_txt {grid-area: txt8;}
     
     #end_img {grid-area: end_img;}
     #end_txt {grid-area: end_txt;}
@@ -227,6 +231,45 @@
 
             "txt7"
             "img7"
+            
+            "end_txt"
+            "end_img";
+    }
+
+    .webster_wrapper {
+        .spacer {
+            display: none;
+        }
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "head_txt"
+            "head_img"
+            "spacer1"
+            "spacer2"
+
+            "txt1"
+            "img1"
+
+            "txt2"
+            "img2"
+
+            "txt3"
+            "img3"
+
+            "txt4"
+            "img4"
+
+            "txt5"
+            "img5"
+
+            "txt6"
+            "img6"
+
+            "txt7"
+            "img7"
+
+            "txt8"
+            "img8"
             
             "end_txt"
             "end_img";

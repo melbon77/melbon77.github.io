@@ -69,144 +69,78 @@
 }
 
 /*! Digital ID grid */
-.id_wrapper {
+.id_wrapper, .swirl_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "head_img head_txt" "spacer1 spacer2" "img1 txt1" "img2 txt2" "img3 txt3" "img4 txt4" "img5 txt5" "img6 txt6" "img7 txt7" "end_img end_txt";
 }
-.id_wrapper .work_banner {
+.id_wrapper .work_banner, .swirl_wrapper .work_banner {
   grid-area: head_img;
 }
-.id_wrapper .work_header {
+.id_wrapper .work_header, .swirl_wrapper .work_header {
   grid-area: head_txt;
 }
-.id_wrapper #spacer1 {
+.id_wrapper #spacer1, .swirl_wrapper #spacer1 {
   grid-area: spacer1;
 }
-.id_wrapper #spacer2 {
+.id_wrapper #spacer2, .swirl_wrapper #spacer2 {
   grid-area: spacer2;
 }
-.id_wrapper #overview_img {
+.id_wrapper #overview_img, .swirl_wrapper #overview_img {
   grid-area: img1;
 }
-.id_wrapper #overview_txt {
+.id_wrapper #overview_txt, .swirl_wrapper #overview_txt {
   grid-area: txt1;
 }
-.id_wrapper #vd_img {
+.id_wrapper #vd_img, .swirl_wrapper #vd_img {
   grid-area: img2;
 }
-.id_wrapper #vd_txt {
+.id_wrapper #vd_txt, .swirl_wrapper #vd_txt {
   grid-area: txt2;
 }
-.id_wrapper #sketches_img {
+.id_wrapper #sketches_img, .swirl_wrapper #sketches_img {
   grid-area: img3;
 }
-.id_wrapper #sketches_txt {
+.id_wrapper #sketches_txt, .swirl_wrapper #sketches_txt {
   grid-area: txt3;
 }
-.id_wrapper #wire_img {
+.id_wrapper #wire_img, .swirl_wrapper #wire_img {
   grid-area: img4;
 }
-.id_wrapper #wire_txt {
+.id_wrapper #wire_txt, .swirl_wrapper #wire_txt {
   grid-area: txt4;
 }
-.id_wrapper #iter_img {
+.id_wrapper #iter_img, .swirl_wrapper #iter_img {
   grid-area: img5;
 }
-.id_wrapper #iter_txt {
+.id_wrapper #iter_txt, .swirl_wrapper #iter_txt {
   grid-area: txt5;
 }
-.id_wrapper #final_img {
+.id_wrapper #final_img, .swirl_wrapper #final_img {
   grid-area: img6;
 }
-.id_wrapper #final-txt {
+.id_wrapper #final-txt, .swirl_wrapper #final-txt {
   grid-area: txt6;
 }
-.id_wrapper #prototype_img {
+.id_wrapper #prototype_img, .swirl_wrapper #prototype_img {
   grid-area: img7;
 }
-.id_wrapper #prototype_txt {
+.id_wrapper #prototype_txt, .swirl_wrapper #prototype_txt {
   grid-area: txt7;
 }
-.id_wrapper #end_img {
+.id_wrapper #end_img, .swirl_wrapper #end_img {
   grid-area: end_img;
 }
-.id_wrapper #end_txt {
+.id_wrapper #end_txt, .swirl_wrapper #end_txt {
   grid-area: end_txt;
 }
 
 /*! Swirl grid */
-.swirl_wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "head_img head_txt" "spacer1 spacer2" "img1 txt1" "img2 txt2" "img3 txt3" "img4 txt4" "img5 txt5" "img6 txt6" "img7 txt7" "end_img end_txt";
-}
-.swirl_wrapper .work_banner {
-  grid-area: head_img;
-}
-.swirl_wrapper .work_header {
-  grid-area: head_txt;
-}
-.swirl_wrapper #spacer1 {
-  grid-area: spacer1;
-}
-.swirl_wrapper #spacer2 {
-  grid-area: spacer2;
-}
-.swirl_wrapper #overview_img {
-  grid-area: img1;
-}
-.swirl_wrapper #overview_txt {
-  grid-area: txt1;
-}
-.swirl_wrapper #vd_img {
-  grid-area: img2;
-}
-.swirl_wrapper #vd_txt {
-  grid-area: txt2;
-}
-.swirl_wrapper #sketches_img {
-  grid-area: img3;
-}
-.swirl_wrapper #sketches_txt {
-  grid-area: txt3;
-}
-.swirl_wrapper #wire_img {
-  grid-area: img4;
-}
-.swirl_wrapper #wire_txt {
-  grid-area: txt4;
-}
-.swirl_wrapper #iter_img {
-  grid-area: img5;
-}
-.swirl_wrapper #iter_txt {
-  grid-area: txt5;
-}
-.swirl_wrapper #final_img {
-  grid-area: img6;
-}
-.swirl_wrapper #final-txt {
-  grid-area: txt6;
-}
-.swirl_wrapper #prototype_img {
-  grid-area: img7;
-}
-.swirl_wrapper #prototype_txt {
-  grid-area: txt7;
-}
-.swirl_wrapper #end_img {
-  grid-area: end_img;
-}
-.swirl_wrapper #end_txt {
-  grid-area: end_txt;
-}
-
 /*! Webster Redesign grid */
 .webster_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "head_img head_txt" "spacer1 spacer2" "img1 txt1" "img2 txt2" "img3 txt3" "img4 txt4" "img5 txt5" "img6 txt6" "img7 txt7" "end_img end_txt";
+  grid-template-areas: "head_img head_txt" "spacer1 spacer2" "img1 txt1" "img2 txt2" "img3 txt3" "img4 txt4" "img5 txt5" "img6 txt6" "img7 txt7" "img8 txt8" "end_img end_txt";
 }
 .webster_wrapper .work_banner {
   grid-area: head_img;
@@ -226,41 +160,47 @@
 .webster_wrapper #overview_txt {
   grid-area: txt1;
 }
-.webster_wrapper #vd_img {
+.webster_wrapper #problems_img {
   grid-area: img2;
 }
-.webster_wrapper #vd_txt {
+.webster_wrapper #problems_txt {
   grid-area: txt2;
 }
-.webster_wrapper #sketches_img {
+.webster_wrapper #goals_img {
   grid-area: img3;
 }
-.webster_wrapper #sketches_txt {
+.webster_wrapper #goals_txt {
   grid-area: txt3;
 }
-.webster_wrapper #wire_img {
+.webster_wrapper #userjourney_img {
   grid-area: img4;
 }
-.webster_wrapper #wire_txt {
+.webster_wrapper #userjourney_txt {
   grid-area: txt4;
 }
-.webster_wrapper #iter_img {
+.webster_wrapper #vd_img {
   grid-area: img5;
 }
-.webster_wrapper #iter_txt {
+.webster_wrapper #vd_txt {
   grid-area: txt5;
 }
-.webster_wrapper #final_img {
+.webster_wrapper #wire_img {
   grid-area: img6;
 }
-.webster_wrapper #final-txt {
+.webster_wrapper #wire_txt {
   grid-area: txt6;
 }
-.webster_wrapper #prototype_img {
+.webster_wrapper #final_img {
   grid-area: img7;
 }
-.webster_wrapper #prototype_txt {
+.webster_wrapper #final_txt {
   grid-area: txt7;
+}
+.webster_wrapper #prototype_img {
+  grid-area: img8;
+}
+.webster_wrapper #prototype_txt {
+  grid-area: txt8;
 }
 .webster_wrapper #end_img {
   grid-area: end_img;
@@ -275,6 +215,13 @@
     grid-template-areas: "head_txt" "head_img" "spacer1" "spacer2" "txt1" "img1" "txt2" "img2" "txt3" "img3" "txt4" "img4" "txt5" "img5" "txt6" "img6" "txt7" "img7" "end_txt" "end_img";
   }
   .dq_wrapper .spacer, .id_wrapper .spacer, .swirl_wrapper .spacer {
+    display: none;
+  }
+  .webster_wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "head_txt" "head_img" "spacer1" "spacer2" "txt1" "img1" "txt2" "img2" "txt3" "img3" "txt4" "img4" "txt5" "img5" "txt6" "img6" "txt7" "img7" "txt8" "img8" "end_txt" "end_img";
+  }
+  .webster_wrapper .spacer {
     display: none;
   }
 }/*# sourceMappingURL=workgrid.css.map */

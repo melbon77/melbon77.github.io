@@ -68,6 +68,8 @@
 }
 .content img, .content video {
   width: 90%;
+  height: -moz-min-content;
+  height: min-content;
   border-radius: 8px;
 }
 .content .shadow {
@@ -141,9 +143,14 @@
 }
 
 .webster_wrapper .work_banner {
+  background-image: linear-gradient(rgba(114, 191, 212, 0) 85%, #72bfd4), url("/assets/webster_site/cover.png");
+  background-position: left;
   background-color: #72bfd4;
 }
 .webster_wrapper .content {
+  background-color: #72bfd4;
+}
+.webster_wrapper .end_cap {
   background-color: #72bfd4;
 }
 
