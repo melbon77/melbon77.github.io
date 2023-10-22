@@ -1,6 +1,6 @@
 /*! Melanie Boncaro 
  *  Portfolio main style
- *  09/28/2023 */
+ *  2023 */
 body {
   margin: 0;
   font-family: "Rubik", sans-serif;
@@ -12,6 +12,25 @@ button {
   border: none;
   border-radius: 8px;
   font-size: 14px;
+}
+
+.deck_link {
+  background-color: #e8ecee;
+  margin-top: 24px;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  transition: 150ms ease;
+}
+.deck_link b {
+  font-weight: 600;
+}
+
+.deck_link:hover {
+  background-color: #d6dadc;
 }
 
 p {
