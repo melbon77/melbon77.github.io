@@ -6,12 +6,12 @@ body
     margin: 0
     font-family: 'Rubik', sans-serif
 
-button
-    margin-top: 24px
-    padding: 16px 24px
-    border: none
-    border-radius: 8px
-    font-size: 14px
+// button
+//     margin-top: 24px
+//     padding: 16px 24px
+//     border: none
+//     border-radius: 8px
+//     font-size: 14px
 
 .deck_link
     background-color: #e8ecee
@@ -168,6 +168,63 @@ p
             color: #000
             text-shadow: 1px 1px 8px #0000003e
 
+
+
+.other_projects_section
+    padding: 32px 40px
+
+    .holder
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        gap: 20px
+
+    .related_link
+        background-color: #e8ecee
+        width: 100%
+        height: fit-content
+        padding-bottom: 16px
+        border-radius: 8px
+        text-align: center
+        transition: 200ms ease
+
+        a
+            // padding-block: 50px
+            width: 100%
+            color: #000
+            text-decoration: none
+            font-size: 18px
+            font-weight: 400
+            transition: 200ms ease
+
+
+        .image
+            width: 100%
+            height: 200px
+            margin-bottom: 16px
+            border-radius: 8px
+            background-size: cover
+            background-position: center
+
+        .dq_image
+            background-image: linear-gradient(#3589bd80, #3891c8d0), url("assets/dq_card.webp")
+        .id_image
+            background-image: linear-gradient(#64676a63, #46484b7e), url("assets/id_card.webp")
+        .swirl_image
+            background-image: linear-gradient(#fbcc55df, #ffc42ff4), url("assets/swirl_letters.webp")
+        .webster_image
+            background-image: linear-gradient(#52889263, #3196a5b9), url("assets/webster_mockup.webp")
+        .quill_image
+            background-image: linear-gradient(#61cdd193, #66e6ebd5), url("assets/quill_card.png")
+            background-position: top
+            
+    .related_link:hover
+        background-color: #d6dadc
+
+        a
+            font-weight: 600
+
+
 .footer
     display: flex
     justify-content: center
@@ -192,3 +249,16 @@ p
 
         .spacer
             width: 1px
+
+    .other_projects_section
+        padding: 32px 20px
+
+        .holder
+            flex-direction: column
+
+        .related_link
+            padding-bottom: 8px
+            .image
+                height: 100px
+                margin-bottom: 8px
+

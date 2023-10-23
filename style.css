@@ -6,14 +6,6 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-button {
-  margin-top: 24px;
-  padding: 16px 24px;
-  border: none;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
 .deck_link {
   background-color: #e8ecee;
   margin-top: 24px;
@@ -173,6 +165,64 @@ p {
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2431372549);
 }
 
+.other_projects_section {
+  padding: 32px 40px;
+}
+.other_projects_section .holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.other_projects_section .related_link {
+  background-color: #e8ecee;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 16px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 200ms ease;
+}
+.other_projects_section .related_link a {
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 200ms ease;
+}
+.other_projects_section .related_link .image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+.other_projects_section .related_link .dq_image {
+  background-image: linear-gradient(rgba(53, 137, 189, 0.5019607843), rgba(56, 145, 200, 0.8156862745)), url("assets/dq_card.webp");
+}
+.other_projects_section .related_link .id_image {
+  background-image: linear-gradient(rgba(100, 103, 106, 0.3882352941), rgba(70, 72, 75, 0.4941176471)), url("assets/id_card.webp");
+}
+.other_projects_section .related_link .swirl_image {
+  background-image: linear-gradient(rgba(251, 204, 85, 0.8745098039), rgba(255, 196, 47, 0.9568627451)), url("assets/swirl_letters.webp");
+}
+.other_projects_section .related_link .webster_image {
+  background-image: linear-gradient(rgba(82, 136, 146, 0.3882352941), rgba(49, 150, 165, 0.7254901961)), url("assets/webster_mockup.webp");
+}
+.other_projects_section .related_link .quill_image {
+  background-image: linear-gradient(rgba(97, 205, 209, 0.5764705882), rgba(102, 230, 235, 0.8352941176)), url("assets/quill_card.png");
+  background-position: top;
+}
+.other_projects_section .related_link:hover {
+  background-color: #d6dadc;
+}
+.other_projects_section .related_link:hover a {
+  font-weight: 600;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -197,5 +247,18 @@ p {
   }
   .work_collection .spacer {
     width: 1px;
+  }
+  .other_projects_section {
+    padding: 32px 20px;
+  }
+  .other_projects_section .holder {
+    flex-direction: column;
+  }
+  .other_projects_section .related_link {
+    padding-bottom: 8px;
+  }
+  .other_projects_section .related_link .image {
+    height: 100px;
+    margin-bottom: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
