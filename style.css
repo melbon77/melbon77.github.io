@@ -233,6 +233,26 @@ p {
   font-size: 14px;
 }
 
+.extras_body {
+  margin: 40px;
+}
+
+.extras_section {
+  margin-top: 100px;
+}
+
+.extras_holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 100%;
+  overflow-x: scroll;
+}
+.extras_holder div img, .extras_holder div video {
+  height: 300px;
+}
+
 @media screen and (max-width: 600px) {
   .home_wrapper {
     grid-template-columns: 20px auto 20px;
