@@ -6,27 +6,35 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-.deck_link {
-  background-color: #e8ecee;
-  margin-top: 24px;
-  padding: 16px 24px;
-  border: none;
+p {
+  font-size: 18px;
+}
+
+.deck_btn {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid #d2d2d2;
   border-radius: 8px;
+  transition: 300ms ease;
+}
+
+.deck_btn:hover {
+  box-shadow: 4px 4px #4d98d8;
+  border: 2px solid #000;
+}
+
+.deck_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 24px;
   font-size: 14px;
   text-decoration: none;
   color: #000;
-  transition: 150ms ease;
 }
 .deck_link b {
   font-weight: 600;
-}
-
-.deck_link:hover {
-  background-color: #d6dadc;
-}
-
-p {
-  font-size: 18px;
 }
 
 /*! Hide things only on home page */
@@ -175,7 +183,7 @@ p {
   gap: 20px;
 }
 .other_projects_section .related_link {
-  background-color: #e8ecee;
+  border: 2px solid #d2d2d2;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -196,7 +204,7 @@ p {
   width: 100%;
   height: 200px;
   margin-bottom: 16px;
-  border-radius: 8px;
+  border-radius: 6px 6px 0 0;
   background-size: cover;
   background-position: center;
 }
@@ -217,7 +225,7 @@ p {
   background-position: top;
 }
 .other_projects_section .related_link:hover {
-  background-color: #d6dadc;
+  box-shadow: 6px 6px #8d9499;
 }
 .other_projects_section .related_link:hover a {
   font-weight: 600;

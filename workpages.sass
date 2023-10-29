@@ -31,17 +31,24 @@
     h1
         font-size: 48px
         margin-bottom: 8px
-    h2
-        font-size: 32px
-        font-weight: 400
+    // h2
+        // font-size: 32px
+        // font-weight: 400
     h3
         font-size: 18px
         font-weight: 400
         margin-top: 0
         color: #a4a4a4
 
+    p
+        font-size: 20px
+
     // .spacer
     //     height: 100px
+
+.work_heading
+    display: flex
+    flex-direction: row
 
 .work_header, .work_banner
     height: 90vh
@@ -49,30 +56,57 @@
     flex-direction: column
     justify-content: center
 
-.work_header, .work_desc
+.work_header
     padding-left: 40px
 
 .work_banner
+    width: 50%
     background-position: center
     background-size: cover
-    border-radius: 16px 16px 0 0
+    border-radius: 16px
+
+.work_section
+    margin: 100px 15%
+    display: flex
+
+.horizontal
+    flex-direction: row
+    div
+        width: 50%
+    .work_desc
+        // padding-left: 64px
+.vertical
+    flex-direction: column
+    .content
+        margin-block: 24px
+
+.work_desc
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-inline: 64px
+    // max-width: 700px
+
+    h2
+        font-size: 32px
 
 
-.work_desc, .content
-    padding-block: 150px
+// .work_desc, .content
+//     padding-block: 150px
 
 .content
     // background-color: #c9e0ee
     // padding-top: 100px
     display: flex
-    flex-wrap: wrap
+    // flex-wrap: wrap
     justify-content: center
     gap: 16px
+    // width: 50%
     
     img, video
         // max-width: 100%
         // max-height: 100%
-        width: 90%
+        width: 100%
         height: min-content
         // height: 100%
         border-radius: 8px
@@ -89,20 +123,23 @@
         // flex-wrap: wrap
         gap: 16px
         padding-inline: 16px
-        img
-            width: 45%
+        // img
+        //     width: 45%
         
 /*! Heuristic images positioning */
+#he_img
+    flex-direction: column
+
 #h_preview1
-    width: 70%
+    width: 85%
     position: relative
-    left: -10%
+    top: 50px
 
 #h_preview2
-    width: 70%
+    width: 85%
     position: relative
-    top: -30%
-    right: -10%
+    top: -50px
+    left: 50px
 
 .end_cap
     border-radius: 0 0 16px 16px
@@ -115,8 +152,8 @@
     .work_banner
         background-image: url("/assets/dq/dq_banner.png")
         background-color: #3FA3DF
-    .content
-        background-color: #3FA3DF
+    // .content
+    //     background-color: #3FA3DF
     .end_cap
         background-color: #3FA3DF
         background-image: url("/assets/dq/wavylines.png")
@@ -125,8 +162,8 @@
     .work_banner
         background-image: linear-gradient(#53637500 85%, #536375), url("/assets/id/id_banner.png")
         background-color: #536375
-    .content
-        background-color: #536375
+    // .content
+    //     background-color: #536375
     .end_cap
         background-image: linear-gradient(#536375, #53637500, #53637500), url("/assets/id/id_pattern.png")
         background-color: #536375
@@ -137,8 +174,8 @@
         // background-image: url("/assets/dq/dq_banner.png")
         background-image: linear-gradient(#ffbf1fde, #fff3d5), url("/assets/swirl_letters.webp")
         background-color: #fff3d5
-    .content
-        background-color: #fff3d5
+    // .content
+    //     background-color: #fff3d5
     .end_cap
         background-image: linear-gradient(#fff3d5, #ffbf1fde), url("/assets/swirl_letters.webp")
         // background: linear-gradient(#fff3d5, #fbcc55)
@@ -148,8 +185,8 @@
         background-image: linear-gradient(#72bfd400 85%, #72bfd4), url("/assets/webster_site/cover.png")
         background-position: left
         background-color: #72bfd4
-    .content
-        background-color: #72bfd4
+    // .content
+    //     background-color: #72bfd4
     .end_cap
         background-color: #72bfd4
 
@@ -160,8 +197,8 @@
         background-color: #6bd5db
         border-inline: 1px solid #000
         border-top: 1px solid #000
-    .content
-        border-inline: 1px solid #000
+    // .content
+    //     border-inline: 1px solid #000
     .end_cap
         border-inline: 1px solid #000
         border-bottom: 1px solid #000
@@ -169,17 +206,28 @@
 
 
 @media screen and (max-width: 800px)
+    p
+        font-size: 18px
     .work_wrapper
         grid-template-columns: 1fr
         padding: 24px
+    .work_heading
+        flex-direction: column
+        height: 90vh
+        padding-top: 64px
     .work_banner
-        border-radius: 16px
+        // height: 200vh
+        width: 100%
     .work_header
+        // height: 30vh
         padding: 0
+    .work_section
+        margin: 0 0
     .work_desc
-        padding-bottom: 0
-        padding-left: 0
-        padding: 150px 0 32px 0
+        // padding-bottom: 0
+        // padding-left: 0
+        // padding: 150px 0 32px 0
+        padding-inline: 8px
     .content
         border-radius: 16px
         padding-block: 20px
@@ -188,8 +236,12 @@
         .content
             background-color: transparent
 
+@media screen and (max-width: 1200px)
+    .work_section
+        margin: 100px 0
+
 @media screen and (min-width: 1200px)
     .work_desc, .work_header
-        padding-inline: 100px 200px
+        // padding-inline: 100px 200px
     .content
         gap: 32px
