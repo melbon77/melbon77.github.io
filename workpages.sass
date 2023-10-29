@@ -25,6 +25,7 @@
 
 .work_wrapper
     padding: 40px
+    
     // display: grid
     // grid-template-columns: 1fr 1fr
 
@@ -68,6 +69,7 @@
 .work_section
     margin: 100px 15%
     display: flex
+    column-gap: 40px
 
 .horizontal
     flex-direction: row
@@ -80,12 +82,16 @@
     .content
         margin-block: 24px
 
+.center
+    padding-inline: 15%
+    justify-content: center
+
 .work_desc
     display: flex
     flex-direction: column
     justify-content: center
-    padding-inline: 64px
-    // max-width: 700px
+    // padding-inline: 64px
+    max-width: 800px
 
     h2
         font-size: 32px
@@ -100,6 +106,7 @@
     display: flex
     // flex-wrap: wrap
     justify-content: center
+    align-items: center
     gap: 16px
     // width: 50%
     
@@ -127,22 +134,23 @@
         //     width: 45%
         
 /*! Heuristic images positioning */
-#he_img
+#he_img, #vd_img
     flex-direction: column
 
 #h_preview1
     width: 85%
     position: relative
-    top: 50px
+    top: 70px
 
 #h_preview2
     width: 85%
     position: relative
-    top: -50px
-    left: 50px
+    top: -70px
+    left: 40px
+
 
 .end_cap
-    border-radius: 0 0 16px 16px
+    border-radius: 16px
     background-size: cover
     // transform: rotate(180deg)
 
@@ -205,42 +213,49 @@
         background: linear-gradient(#ffffff00, #6bd5db)
 
 
+/* Small Screens */
 @media screen and (max-width: 800px)
     p
         font-size: 18px
     .work_wrapper
-        grid-template-columns: 1fr
+        // grid-template-columns: 1fr
         padding: 24px
     .work_heading
         flex-direction: column
         height: 90vh
-        padding-top: 64px
+        padding-top: 80px
     .work_banner
         // height: 200vh
         width: 100%
     .work_header
         // height: 30vh
         padding: 0
+        align-items: center
+        text-align: center
     .work_section
         margin: 0 0
+        column-gap: 24px
+
+    .horizontal
+        // flex-direction: column
     .work_desc
         // padding-bottom: 0
         // padding-left: 0
         // padding: 150px 0 32px 0
-        padding-inline: 8px
+        // padding-inline: 8px
     .content
         border-radius: 16px
-        padding-block: 20px
+        // padding-block: 20px
 
-    .work_wrapper
-        .content
-            background-color: transparent
-
+/* Medium Screens */
 @media screen and (max-width: 1200px)
     .work_section
         margin: 100px 0
 
+/* Larger Screens */
 @media screen and (min-width: 1200px)
+    .work_wrapper h1
+        font-size: 64px
     .work_desc, .work_header
         // padding-inline: 100px 200px
     .content

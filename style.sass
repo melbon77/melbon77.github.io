@@ -8,6 +8,8 @@ body
 
 p
     font-size: 18px
+    line-height: 26px
+    margin-block: 12px
 
 // button
 //     margin-top: 24px
@@ -22,7 +24,7 @@ p
     // flex-direction: column
     width: fit-content
     // height: 44px
-    // margin-top: 24px
+    margin-top: 16px
     // padding: 32px
     border: 2px solid #d2d2d2
     border-radius: 8px
@@ -190,7 +192,7 @@ p
 
 
 .other_projects_section
-    padding: 32px 40px
+    padding: 32px 15%
 
     .holder
         display: flex
@@ -225,25 +227,30 @@ p
             border-radius: 6px 6px 0 0
             background-size: cover
             background-position: center
+            filter: grayscale(100%)
+            transition: 200ms ease
 
         .dq_image
             background-image: linear-gradient(#3589bd80, #3891c8d0), url("assets/dq_card.webp")
         .id_image
-            background-image: linear-gradient(#64676a63, #46484b7e), url("assets/id_card.webp")
+            background-image: linear-gradient(#a591c25e, #67317e98), url("assets/id_card.webp")
         .swirl_image
             background-image: linear-gradient(#fbcc55df, #ffc42ff4), url("assets/swirl_letters.webp")
         .webster_image
-            background-image: linear-gradient(#52889263, #3196a5b9), url("assets/webster_mockup.webp")
+            background-image: linear-gradient(#83dae963, #2eacbfb9), url("assets/webster_mockup.webp")
         .quill_image
-            background-image: linear-gradient(#61cdd193, #66e6ebd5), url("assets/quill_card.png")
+            background-image: linear-gradient(#c4e0e199, #50dadfb3), url("assets/quill_card.png")
             background-position: top
             
     .related_link:hover
-        // background-color: #d6dadc
+        border: 2px solid #000
         box-shadow: 6px 6px #8d9499
 
         a
             font-weight: 600
+
+        .image
+            filter: grayscale(0%)
 
 
 .footer
@@ -303,6 +310,9 @@ p
         .related_link
             padding-bottom: 8px
             .image
-                height: 100px
+                height: 120px
                 margin-bottom: 8px
 
+@media screen and (max-width: 1200px)
+    .other_projects_section
+        padding-inline: 40px
