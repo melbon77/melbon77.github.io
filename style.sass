@@ -6,6 +6,11 @@ body
     margin: 0
     font-family: 'Rubik', sans-serif
 
+p
+    font-size: 18px
+    line-height: 26px
+    margin-block: 12px
+
 // button
 //     margin-top: 24px
 //     padding: 16px 24px
@@ -13,24 +18,40 @@ body
 //     border-radius: 8px
 //     font-size: 14px
 
-.deck_link
-    background-color: #e8ecee
-    margin-top: 24px
-    padding: 16px 24px
-    border: none
+.deck_btn
+    // background-color: #e8ecee
+    display: block
+    // flex-direction: column
+    width: fit-content
+    // height: 44px
+    margin-top: 16px
+    // padding: 32px
+    border: 2px solid #d2d2d2
     border-radius: 8px
+    // box-shadow: 4px 4px #4d98d8
+    transition: 300ms ease
+
+.deck_btn:hover
+    // background-color: #d6dadc
+    box-shadow: 4px 4px #4d98d8
+    border: 2px solid #000
+
+.deck_link
+    // display: block
+    display: flex
+    flex-direction: column
+    // justify-content: center
+    align-items: center
+    // width: 100%
+    // height: 100%
+    padding: 8px 24px
     font-size: 14px
     text-decoration: none
     color: #000
-    transition: 150ms ease
     b
         font-weight: 600
 
-.deck_link:hover
-    background-color: #d6dadc
 
-p
-    font-size: 18px
 
 /*! Hide things only on home page */
 .home_body
@@ -171,7 +192,7 @@ p
 
 
 .other_projects_section
-    padding: 32px 40px
+    padding: 32px 15%
 
     .holder
         display: flex
@@ -180,7 +201,8 @@ p
         gap: 20px
 
     .related_link
-        background-color: #e8ecee
+        // background-color: #e8ecee
+        border: 2px solid #d2d2d2
         width: 100%
         height: fit-content
         padding-bottom: 16px
@@ -202,27 +224,33 @@ p
             width: 100%
             height: 200px
             margin-bottom: 16px
-            border-radius: 8px
+            border-radius: 6px 6px 0 0
             background-size: cover
             background-position: center
+            filter: grayscale(70%)
+            transition: 200ms ease
 
         .dq_image
             background-image: linear-gradient(#3589bd80, #3891c8d0), url("assets/dq_card.webp")
         .id_image
-            background-image: linear-gradient(#64676a63, #46484b7e), url("assets/id_card.webp")
+            background-image: linear-gradient(#a591c25e, #67317e98), url("assets/id_card.webp")
         .swirl_image
             background-image: linear-gradient(#fbcc55df, #ffc42ff4), url("assets/swirl_letters.webp")
         .webster_image
-            background-image: linear-gradient(#52889263, #3196a5b9), url("assets/webster_mockup.webp")
+            background-image: linear-gradient(#83dae963, #2eacbfb9), url("assets/webster_mockup.webp")
         .quill_image
-            background-image: linear-gradient(#61cdd193, #66e6ebd5), url("assets/quill_card.png")
+            background-image: linear-gradient(#c4e0e199, #50dadfb3), url("assets/quill_card.png")
             background-position: top
             
     .related_link:hover
-        background-color: #d6dadc
+        border: 2px solid #000
+        box-shadow: 6px 6px #8d9499
 
         a
             font-weight: 600
+
+        .image
+            filter: grayscale(0%)
 
 
 .footer
@@ -282,6 +310,9 @@ p
         .related_link
             padding-bottom: 8px
             .image
-                height: 100px
+                height: 120px
                 margin-bottom: 8px
 
+@media screen and (max-width: 1200px)
+    .other_projects_section
+        padding-inline: 40px
