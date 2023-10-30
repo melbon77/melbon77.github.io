@@ -123,6 +123,17 @@ p
         background-position: center center
         transition: 200ms ease
 
+    div:nth-child(1 of .card)
+        animation: .8s ease 1.6s slideleft both
+    div:nth-child(2 of .card)
+        animation: .8s ease 1.8s slideleft both
+    div:nth-child(3 of .card)
+        animation: .8s ease 2s slideleft both
+    div:nth-child(4 of .card)
+        animation: .8s ease 2.2s slideleft both
+    div:nth-child(5 of .card)
+        animation: .8s ease 2.4s slideleft both
+
     div:not(:first-child, :last-child):hover
         box-shadow: 2px 4px 8px #00000067
         translate: 0 -10px
@@ -188,6 +199,14 @@ p
         a
             color: #000
             text-shadow: 1px 1px 8px #0000003e
+
+@keyframes slideleft
+    0%
+        transform: translateX(100px)
+        opacity: 0
+    100%
+        transform: translate(0px)
+        opacity: 1
 
 
 
