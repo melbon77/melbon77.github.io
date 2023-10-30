@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
     <div class="work_wrapper quill_wrapper">
 
-        <nav class="back_btn">
+        <nav class="back_btn" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
             <!-- <a href="/index.html">&#8592;</a> -->
             <div title="Back" style="rotate: 180deg;">
                 <a href="/index.html" >&#x279E;</a>
@@ -24,17 +25,17 @@
     
         <!-- Top splash section -->
         <div class="work_heading">
-            <div class="work_banner"></div>
+            <div class="work_banner" data-aos="fade-right" data-aos-duration="600" data-aos-delay="200"></div>
             <div class="work_header">
-                <h1>Quill & Ink Consulting</h1>
-                <h3>Branding &#8226; UI/UX</h3>
-                <h2>Designing the company's website and brand.</h2>
+                <h1 data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">Quill & Ink Consulting</h1>
+                <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">Branding &#8226; UI/UX</h3>
+                <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">Designing the company's website and brand.</h2>
             </div>
         </div>
 
         <!-- Overview -->
         <div class="work_section horizontal">
-            <div class="work_desc" id="overview_txt">
+            <div class="work_desc" id="overview_txt" data-aos="fade-up" data-aos-delay="50">
                 <h2>Overview</h2>
                 <p>Branding, styling, formatting, advertising, you know. Things a business
                     needs on its website.</p>
@@ -42,44 +43,44 @@
                 <p><b>Timeline</b> - 4 weeks</p>
                 <p><b>Tools</b> - Figma, Illustrator</p>
             </div>
-            <div class="content" id="overview_img">
+            <div class="content" id="overview_img" data-aos="fade-up">
                 <img class="shadow" src="/assets/quillink/cover.jpg">
             </div>
         </div>
 
         <!-- Wireframes -->
         <div class="work_section horizontal">
-            <div class="content" id="wire_img">
+            <div class="content" id="wire_img" data-aos="fade-up">
                     <img class="shadow" src="/assets/quillink/wire1.jpg">
                     <img class="shadow" src="/assets/quillink/wire2.jpg">
             </div>
-            <div class="work_desc" id="wire_txt">
+            <div class="work_desc" id="wire_txt" data-aos="fade-up" data-aos-delay="50">
                 <h2>Wireframes</h2>
             </div>
         </div>
 
         <!-- Final Designs -->
         <div class="work_section horizontal">
-            <div class="work_desc" id="final_txt">
+            <div class="work_desc" id="final_txt" data-aos="fade-up" data-aos-delay="50">
                 <h2>Final Design</h2>
             </div>
-            <div class="content" id="final_img">
+            <div class="content" id="final_img" data-aos="fade-up">
                 <img class="shadow" src="/assets/quillink/final.jpg">
             </div>
         </div>
 
         <!-- Style Guide -->
         <div class="work_section horizontal">
-            <div class="content" id="style_img">
+            <div class="content" id="style_img" data-aos="fade-up">
                 <img src="/assets/quillink/styleguide.jpg">
             </div>
-            <div class="work_desc" id="style_txt">
+            <div class="work_desc" id="style_txt" data-aos="fade-up" data-aos-delay="50">
                 <h2>Style Guide</h2>
             </div>
         </div>
 
         <!-- Conclusion -->
-        <div class="work_section">
+        <div class="work_section" data-aos="fade-right">
             <div class="end_cap" id="end_img"></div>
             <div class="work_desc" id="end_txt">
                 <h2>Things I'd Like to Fix</h2>
@@ -90,19 +91,19 @@
     </div>
 
     <div class="other_projects_section">
-        <h2>Other Projects</h2>
+        <h2 data-aos="fade-up">Other Projects</h2>
         <div class="holder">
-            <div class="related_link">
+            <div class="related_link" data-aos="fade-up">
                 <a href="dqkiosk.html">
                 <div class="image dq_image"></div>
                     DQ Kiosk</a>
             </div>
-            <div class="related_link">
+            <div class="related_link" data-aos="fade-up" data-aos-delay="50">
                 <a href="digitalid.html">
                     <div class="image id_image"></div>
                     Digital ID</a>
             </div>
-            <div class="related_link">
+            <div class="related_link" data-aos="fade-up" data-aos-delay="100">
                 <a href="quillandink.html">
                     <div class="image quill_image"></div>
                     Quill & Ink</a>
@@ -116,6 +117,11 @@
             by Melanie Boncaro &#169; 2023
         </p>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

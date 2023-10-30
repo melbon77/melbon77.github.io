@@ -6,16 +6,15 @@
     <title>Digital ID - Melanie Boncaro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="workpages.css">
-    <!-- <link rel="stylesheet" href="workgrid.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="work_wrapper id_wrapper">
 
-        <nav class="back_btn">
+        <nav class="back_btn" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
             <!-- <a href="/index.html">&#8592;</a> -->
             <div title="Back" style="rotate: 180deg;">
                 <a href="/index.html" >&#x279E;</a>
@@ -24,17 +23,17 @@
     
         <!-- Top splash section -->
         <div class="work_heading">
-            <div class="work_banner"></div>
+            <div class="work_banner" data-aos="fade-right" data-aos-duration="600" data-aos-delay="200"></div>
             <div class="work_header">
-                <h1>NYS Digital ID</h1>
-                <h3>UI &#8226; UX &#8226; Prototyping &#8226; Typography</h3>
-                <h2>Translating the traditional ID into a digital format.</h2>
+                <h1 data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">NYS Digital ID</h1>
+                <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">UI &#8226; UX &#8226; Prototyping &#8226; Typography</h3>
+                <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">Translating the traditional ID into a digital format.</h2>
             </div>
         </div>
 
         <!-- Overview -->
         <div class="work_section horizontal">
-            <div class="work_desc">
+            <div class="work_desc" id="overview_txt" data-aos="fade-up" data-aos-delay="50">
                 <p><b>Timeline</b> - 6 weeks</p>
                 <p><b>Tools</b> - Figma, Illustrator</p>
                 <br>
@@ -46,7 +45,7 @@
                     </a>
                 </div>
             </div>
-            <div class="work_desc" id="overview_txt">
+            <div class="work_desc" id="overview_txt" data-aos="fade-up">
                 <h2>Overview</h2>
                 <p>
                     If you can do it with your money, why not with your identity?
@@ -63,12 +62,12 @@
 
         <!-- Visual Directions -->
         <div class="work_section horizontal">
-            <div class="content" id="vd_img">
+            <div class="content" id="vd_img" data-aos="fade-up">
                 <img class="shadow" src="/assets/id/direction1.png">
                 <img class="shadow" src="/assets/id/direction2.png">
                 <img class="shadow" src="/assets/id/direction3.png">
             </div>
-            <div class="work_desc" id="vd_txt">
+            <div class="work_desc" id="vd_txt" data-aos="fade-up" data-aos-delay="50">
                 <h2>Visual Directions</h2>
                 <p><b>1. Night Life</b> - dark, dynamic, bubbly</p>
                 <p><b>2. Urban</b> - minimal, clear, solid</p>
@@ -82,14 +81,14 @@
 
         <!-- Sketches -->
         <div class="work_section horizontal">
-            <div class="work_desc" id="sketches_txt">
+            <div class="work_desc" id="sketches_txt" data-aos="fade-up">
                 <h2>Sketches</h2>
                 <p>
                     These sketches explore how a design language that ties to 
                     New York State could be implemented as a simple ID interface.
                 </p>
             </div>
-            <div class="content" id="sketches_img">
+            <div class="content" id="sketches_img" data-aos="fade-up" data-aos-delay="50">
                 <!-- <div class="gallery"> -->
                     <img class="shadow" src="/assets/id/sketches1.webp">
                     <img class="shadow" src="/assets/id/sketches2.webp">
@@ -99,12 +98,12 @@
 
         <!-- Wireframes -->
         <div class="work_section vertical">
-            <div class="work_desc" id="wire_txt">
+            <div class="work_desc" id="wire_txt" data-aos="fade-up">
                 <h2>Wireframes</h2>
                 <p>Exploration of how the transition from the full view of the 
                     ID to an age identification view could work.</p>
             </div>
-            <div class="content" id="wire_img">
+            <div class="content" id="wire_img" data-aos="fade-up">
                 <!-- <div class="gallery"> -->
                     <img class="shadow" src="/assets/id/wire1.jpg">
                     <img class="shadow" src="/assets/id/wire2.jpg">
@@ -116,14 +115,14 @@
 
         <!-- Iterations -->
         <div class="work_section vertical">
-            <div class="work_desc" id="iter_txt">
+            <div class="work_desc" id="iter_txt" data-aos="fade-up">
                 <h2>Iterations</h2>
                 <p>My first iterations (yellow) were simple and flat, but not 
                     terrible. In further iterations I wanted to push the design 
                     to be <b>more dynamic</b> and drew more inspiration from my 1st 
                     visual design direction.</p>
             </div>
-            <div class="content" id="iter_img">
+            <div class="content" id="iter_img" data-aos="fade-up">
                 <!-- <img class="shadow" src="/assets/dq/phys_mockup.jpg"> -->
                 <!-- <div class="gallery"> -->
                     <img class="shadow" src="/assets/id/iter1.webp">
@@ -136,10 +135,10 @@
 
         <!-- Final Comps -->
         <div class="work_section vertical">
-            <div class="work_desc" id="final-txt">
+            <div class="work_desc" id="final-txt" data-aos="fade-up">
                 <h2>Final Designs</h2>
             </div>
-            <div class="content" id="final_img">
+            <div class="content" id="final_img" data-aos="fade-up">
                 <!-- <div class="gallery" id="id_final_gallery"> -->
                     <img class="shadow" src="/assets/id/final2.webp">
                     <img class="shadow" src="/assets/id/final3.webp">
@@ -154,11 +153,11 @@
 
         <!-- Prototype -->
         <div class="work_section horizontal">
-            <div class="content" id="prototype_img">
+            <div class="content" id="prototype_img" data-aos="fade-up">
                 <!-- <img class="shadow" src="/assets/dq/dq_view1.gif"></img> -->
                 <video controls src="/assets/id/prototype.mp4" style="max-height: 90vh;"></video>
             </div>
-            <div class="work_desc" id="prototype_txt">
+            <div class="work_desc" id="prototype_txt" data-aos="fade-up" data-aos-delay="50">
                 <h2>Prototype</h2>
                 <p>
                     This prototype goes through selecting an ID and viewing it in
@@ -170,7 +169,7 @@
 
         <!-- Conclusion -->
         <div class="work_section horizontal">
-            <div class="work_desc" id="end_txt">
+            <div class="work_desc" id="end_txt" data-aos="fade-up" data-aos-delay="50">
                 <h2>With More Time...</h2>
                 <p>There is SO much more I would like to do with this design.</p>
                 <p>I was just starting to create a <b>brand identity</b> for 'NYSID'; 
@@ -181,24 +180,24 @@
                     The buttons should look more like 'cards' and less like a call to action.
                 </p>
             </div>
-            <div class="end_cap" id="end_img"></div>
+            <div class="end_cap" id="end_img" data-aos="fade-up"></div>
         </div>
     </div>
 
     <div class="other_projects_section">
-        <h2>Other Projects</h2>
+        <h2 data-aos="fade-up">Other Projects</h2>
         <div class="holder">
-            <div class="related_link">
+            <div class="related_link" data-aos="fade-up">
                 <a href="dqkiosk.html">
                 <div class="image dq_image"></div>
                     DQ Kiosk</a>
             </div>
-            <div class="related_link">
+            <div class="related_link" data-aos="fade-up" data-aos-delay="50">
                 <a href="swirl.html">
                     <div class="image swirl_image"></div>
                     Swirl</a>
             </div>
-            <div class="related_link">
+            <div class="related_link" data-aos="fade-up" data-aos-delay="100">
                 <a href="websterredesign.html">
                     <div class="image webster_image"></div>
                     Town of Webster Redesign</a>
@@ -213,5 +212,9 @@
         </p>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

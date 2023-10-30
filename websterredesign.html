@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         #workingonit {
             background-color: #fad3d3;
@@ -23,7 +23,7 @@
 <body>
     <div class="work_wrapper webster_wrapper">
 
-        <nav class="back_btn">
+        <nav class="back_btn" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
             <!-- <a href="/index.html">&#8592;</a> -->
             <div title="Back" style="rotate: 180deg;">
                 <a href="/index.html" >&#x279E;</a>
@@ -32,17 +32,17 @@
     
         <!-- Top splash section -->
         <div class="work_heading">
-            <div class="work_banner"></div>
+            <div class="work_banner" data-aos="fade-right" data-aos-duration="600" data-aos-delay="200"></div>
             <div class="work_header">
-                <h1>Town of Webster, NY Site Redesign</h1>
-                <h3>UI/UX &#8226; Prototyping</h3>
-                <h2>Breathing new life into an overused format.</h2>
+                <h1 data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">Town of Webster, NY Site Redesign</h1>
+                <h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">UI/UX &#8226; Prototyping</h3>
+                <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">Breathing new life into an overused format.</h2>
             </div>
         </div>
 
         <!-- Overview -->
         <div class="work_section horizontal">
-            <div class="work_desc" id="overview_txt">
+            <div class="work_desc" id="overview_txt" data-aos="fade-up" data-aos-delay="50">
                 <h2>Overview</h2>
                 <p>Once you've seen one city's website, you've seen them all.</p>
                 <p>Finding common shortfalls in this type of website and creating solutions.</p>
@@ -58,14 +58,14 @@
                     </a>
                 </div>
             </div>
-            <div class="content" id="overview_img">
+            <div class="content" id="overview_img" data-aos="fade-up">
                 <img class="shadow" src="/assets/webster_site/home.jpg">
             </div>
         </div>
 
         <!-- Current Problems -->
         <div class="work_section vertical">
-            <div class="work_desc" id="problems_txt">
+            <div class="work_desc" id="problems_txt" data-aos="fade-up">
                 <h2>Problems with the Current Design</h2>
                 <ul>
                     <li><p>Home page did not include much relevant content or give an 
@@ -74,7 +74,7 @@
                     <li><p>Unclear hierarchy in both navigation and content pages</p></li>
                 </ul>
             </div>
-            <div class="content" id="problems_img">
+            <div class="content" id="problems_img" data-aos="fade-up">
                 <div class="gallery">
                     <img class="shadow" src="/assets/webster_site/problem1.jpg">
                     <img class="shadow" src="/assets/webster_site/problem2.jpg">
@@ -86,7 +86,7 @@
         <!-- Goals -->
         <div class="work_section center">
             <div class="content" id="goals_img"></div>
-            <div class="work_desc" id="goals_txt">
+            <div class="work_desc" id="goals_txt" data-aos="fade-up">
                 <h2>Goals</h2>
                 <!-- <ol>
                     <li><p>Create a better <b>hierarchy</b> to increase readability and skimmability.</p></li>
@@ -101,10 +101,10 @@
 
         <!-- User stuff -->
         <div class="work_section vertical">
-            <div class="work_desc" id="userjourney_txt">
+            <div class="work_desc" id="userjourney_txt" data-aos="fade-up">
                 <h2>User Persona & Journey</h2>
             </div>
-            <div class="content" id="userjourney_img">
+            <div class="content" id="userjourney_img" data-aos="fade-up">
                 <img class="shadow" src="/assets/webster_site/userpersona.jpg">
                 <img class="shadow" src="/assets/webster_site/userjourney.jpg">
             </div>
@@ -112,20 +112,20 @@
 
         <!-- Visual Directions -->
         <div class="work_section horizontal">
-            <div class="work_desc" id="vd_txt">
+            <div class="work_desc" id="vd_txt" data-aos="fade-up">
                 <h2>Visual Directions</h2>
                 <p>Ideas for two different styles.</p>
             </div>
-            <div class="content" id="vd_img"></div>
+            <div class="content" id="vd_img" data-aos="fade-up"></div>
         </div>
 
         <!-- Wireframes -->
         <div class="work_section vertical">
-            <div class="work_desc" id="wire_txt">
+            <div class="work_desc" id="wire_txt" data-aos="fade-up">
                 <h2>Wireframe Iterations</h2>
                 <p>Iterations for both the home page and Garbage & Recycling page.</p>
             </div>
-            <div class="content" id="wire_img">
+            <div class="content" id="wire_img" data-aos="fade-up">
                 <!-- <div class="gallery"> -->
                     <img class="shadow" src="/assets/webster_site/wire1.jpg">
                     <img class="shadow" src="/assets/webster_site/wire2.jpg">
@@ -139,7 +139,7 @@
 
         <!-- Final Designs -->
         <div class="work_section vertical">
-            <div class="work_desc" id="final_txt">
+            <div class="work_desc" id="final_txt" data-aos="fade-up">
                 <h2>Final Designs</h2>
                 <p>Final solutions for both the home page and Garbage & Recycling page.</p>
                 <h4>How goals were addressed:</h4>
@@ -160,7 +160,7 @@
                     </li>
                 </ol>
             </div>
-            <div class="content" id="final_img">
+            <div class="content" id="final_img" data-aos="fade-up">
                 <img class="shadow" src="/assets/webster_site/final1.jpg">
                 <img class="shadow" src="/assets/webster_site/final2.jpg">
             </div>
@@ -168,12 +168,12 @@
 
         <!-- Prototype -->
         <div class="work_section horizontal">
-            <div class="work_desc" id="prototype_txt">
+            <div class="work_desc" id="prototype_txt" data-aos="fade-up" data-aos-delay="50">
                 <h2>Prototype</h2>
                 <p>Follows the path of a user looking for details about getting trash pickup
                     services at their home.</p>
             </div>
-            <div class="content" id="prototype_img">
+            <div class="content" id="prototype_img" data-aos="fade-up">
                 <video controls src="/assets/webster_site/prototype.mov"></video>
             </div>
         </div>
@@ -181,7 +181,7 @@
         <!-- Conclusion -->
         <div class="work_section center">
             <div class="end_cap" id="end_img"></div>
-            <div class="work_desc" id="end_txt">
+            <div class="work_desc" id="end_txt" data-aos="fade-up">
                 <h2>With More Time...</h2>
                 <p>I would bring more life into the navigation bar and the area 
                     above the fold on the home page using more visual elements
@@ -192,19 +192,19 @@
     </div>
 
     <div class="other_projects_section">
-        <h2>Other Projects</h2>
+        <h2 data-aos="fade-up">Other Projects</h2>
         <div class="holder">
-            <div class="related_link">
+            <div class="related_link" data-aos="fade-up">
                 <a href="quillandink.html">
                     <div class="image quill_image"></div>
                     Quill & Ink</a>
             </div>
-            <div class="related_link">
+            <div class="related_link" data-aos="fade-up" data-aos-delay="50">
                 <a href="dqkiosk.html">
                 <div class="image dq_image"></div>
                     DQ Kiosk</a>
             </div>
-            <div class="related_link">
+            <div class="related_link" data-aos="fade-up" data-aos-delay="100">
                 <a href="swirl.html">
                     <div class="image swirl_image"></div>
                     Swirl</a>
@@ -219,5 +219,9 @@
         </p>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
