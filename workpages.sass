@@ -85,6 +85,7 @@
 .center
     padding-inline: 15%
     justify-content: center
+    // background-color: #e6e9ed
 
 .work_desc
     display: flex
@@ -233,8 +234,15 @@
         margin: 0 0
         column-gap: 24px
 
-    .horizontal
-        // flex-direction: column
+    .horizontal div
+        width: 100%
+    .horizontal.normal
+        flex-direction: column
+    .horizontal.reverse
+        flex-direction: column-reverse
+    .center
+        padding-inline: 0
+
     .work_desc
         // padding-bottom: 0
         // padding-left: 0

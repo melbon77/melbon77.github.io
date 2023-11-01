@@ -217,6 +217,18 @@
     -moz-column-gap: 24px;
          column-gap: 24px;
   }
+  .horizontal div {
+    width: 100%;
+  }
+  .horizontal.normal {
+    flex-direction: column;
+  }
+  .horizontal.reverse {
+    flex-direction: column-reverse;
+  }
+  .center {
+    padding-inline: 0;
+  }
   .content {
     border-radius: 16px;
   }
