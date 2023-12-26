@@ -21,6 +21,24 @@
   color: #000;
 }
 
+@keyframes upAndDown {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.down_arrow {
+  position: relative;
+  width: 48px;
+  margin-top: 48px;
+  animation: upAndDown 1.6s ease infinite;
+}
+
 .work_wrapper {
   padding: 40px;
 }
@@ -62,10 +80,10 @@
 }
 
 .work_section {
-  margin: 100px 15%;
+  margin: 120px 15%;
   display: flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  -moz-column-gap: 72px;
+       column-gap: 72px;
 }
 
 .horizontal {
@@ -191,8 +209,15 @@
   background: linear-gradient(rgba(255, 255, 255, 0), #6bd5db);
 }
 
+.alche_wrapper .work_banner {
+  background-image: linear-gradient(rgba(189, 204, 209, 0) 85%, #1c1d1e), url("/assets/alchemedia/stand.jpg");
+}
+
 /* Small Screens */
 @media screen and (max-width: 800px) {
+  .back_btn {
+    top: 10px;
+  }
   p {
     font-size: 18px;
   }
@@ -202,15 +227,17 @@
   .work_heading {
     flex-direction: column;
     height: 90vh;
-    padding-top: 80px;
+    padding-top: 56px;
   }
   .work_banner {
     width: 100%;
   }
   .work_header {
     padding: 0;
+    margin-top: 24px;
     align-items: center;
     text-align: center;
+    justify-content: start;
   }
   .work_section {
     margin: 0 0;
@@ -231,6 +258,7 @@
   }
   .content {
     border-radius: 16px;
+    margin-top: 24px;
   }
 }
 /* Medium Screens */

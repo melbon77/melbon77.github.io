@@ -22,6 +22,25 @@
         text-decoration: none
         color: #000
 
+// .down_holder
+//     height: 100%
+
+@keyframes upAndDown
+    0%
+        top: 0
+    50%
+        top: 20px
+    100%
+        top: 0
+
+.down_arrow
+    position: relative
+    width: 48px
+    margin-top: 48px
+    // animation-iteration-count: infinite
+    // animation-name: upAndDown
+    animation: upAndDown 1.6s ease infinite
+
 
 .work_wrapper
     padding: 40px
@@ -67,9 +86,9 @@
     border-radius: 16px
 
 .work_section
-    margin: 100px 15%
+    margin: 120px 15%
     display: flex
-    column-gap: 40px
+    column-gap: 72px
 
 .horizontal
     flex-direction: row
@@ -116,6 +135,7 @@
         // max-height: 100%
         width: 100%
         height: min-content
+        // max-height: 90vh
         // height: 100%
         border-radius: 8px
         // object-fit: contain
@@ -210,26 +230,35 @@
         border-bottom: 1px solid #000
         background: linear-gradient(#ffffff00, #6bd5db)
 
+.alche_wrapper
+    .work_banner
+        background-image: linear-gradient(#bdccd100 85%, #1c1d1e), url("/assets/alchemedia/stand.jpg")
+
 
 /* Small Screens */
 @media screen and (max-width: 800px)
+    .back_btn
+        top: 10px
     p
         font-size: 18px
+    
     .work_wrapper
         // grid-template-columns: 1fr
         padding: 24px
     .work_heading
         flex-direction: column
         height: 90vh
-        padding-top: 80px
+        padding-top: 56px
     .work_banner
         // height: 200vh
         width: 100%
     .work_header
         // height: 30vh
         padding: 0
+        margin-top: 24px
         align-items: center
         text-align: center
+        justify-content: start
     .work_section
         margin: 0 0
         column-gap: 24px
@@ -251,6 +280,7 @@
     .content
         border-radius: 16px
         // padding-block: 20px
+        margin-top: 24px
 
 /* Medium Screens */
 @media screen and (max-width: 1200px)
