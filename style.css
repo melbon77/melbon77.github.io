@@ -158,6 +158,15 @@ a:hover {
   font-weight: 600;
   padding-left: 16px;
 }
+.work_collection #alche_card {
+  background-image: linear-gradient(rgba(146, 216, 24, 0.2705882353) 70%, rgba(146, 216, 24, 0.737254902)), url("/assets/alchemedia/wires.jpg");
+  background-color: #92d818;
+  background-size: cover;
+}
+.work_collection #alche_card a {
+  color: #fff;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
+}
 .work_collection #dq_card {
   background-image: url("/assets/dq_card.webp");
   background-color: #3FA3DF;

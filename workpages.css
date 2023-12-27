@@ -210,7 +210,8 @@
 }
 
 .alche_wrapper .work_banner {
-  background-image: linear-gradient(rgba(189, 204, 209, 0) 85%, #1c1d1e), url("/assets/alchemedia/stand.jpg");
+  background-image: url("/assets/alchemedia/standDark.jpg");
+  box-shadow: 6px 6px #92d818;
 }
 
 /* Small Screens */
