@@ -113,6 +113,10 @@
 .work_desc h2 {
   font-size: 32px;
 }
+.work_desc li {
+  font-size: 18px;
+  line-height: 28px;
+}
 
 .content {
   display: flex;
