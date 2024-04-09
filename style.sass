@@ -121,7 +121,7 @@ a:hover
 
     div:not(:first-child, :last-child) 
         /*! avoids spacer divs */
-        background-color: lightblue
+        background-color: #3FA3DF
         // display: flex
         // flex-shrink: 0
         min-width: 250px
@@ -155,6 +155,7 @@ a:hover
         flex-shrink: 0
 
     a
+        color: #fff
         text-decoration: none
         width: 100%
         height: 100%
@@ -167,23 +168,30 @@ a:hover
 
         font-weight: 600
         // padding-bottom: 32px
-        padding-left: 16px
+        padding-inline: 16px
+        margin-block: 4px
+
+    p
+        font-size: 1em
+        padding-inline: 16px
+        margin-top: 4px
+
+
+    .card
+        background-size: cover
+
 
     #alche_card
         background-image: linear-gradient(#92d81845 70%, #92d818bc), url("/assets/alchemedia/wires.jpg")
         // background-image: linear-gradient(#92d8182e 75%, #92d8189e), url("/assets/alchemedia/cauldron.gif")
         background-color: #92d818
-        background-size: cover
         a
             color: #fff
             text-shadow: 1px 1px 8px #00000080
 
-
-
     #dq_card
         background-image: url("/assets/dq_card.webp")
         background-color: #3FA3DF
-        background-size: cover
         background-position: left center
         overflow: hidden
         a
@@ -193,7 +201,6 @@ a:hover
     #id_card
         background-image: url("/assets/id_card.webp")
         background-color: #536375
-        background-size: cover
         background-position: left center
         overflow: hidden
         a
@@ -201,16 +208,15 @@ a:hover
             text-shadow: 1px 1px 8px #00000080
 
     #webster_card
-        background-image: url("/assets/webster_mockup.webp")
-        background-size: cover
+        background-image: linear-gradient(#f2feff06 70%, #a3eaf1bc), url("/assets/webster_mockup.webp")
         a
-            color: #000
-            text-shadow: 1px 1px 8px #0000003e
+            // color: #000
+            // text-shadow: 1px 1px 8px #0000003e
+            text-shadow: 1px 1px 8px #00000080
 
     #quill_card
         background-image: url("/assets/quill_card.png")
         background-color: #85CACD
-        background-size: cover
         a
             color: #000
             text-shadow: 1px 1px 8px #0000003e
@@ -218,10 +224,24 @@ a:hover
     #swirl_card
         background-image: linear-gradient(#fbcc55df, #ffc42ff4), url("/assets/swirl_letters.webp")
         background-color: #fbcc55
-        background-size: cover
         a
             color: #000
             text-shadow: 1px 1px 8px #0000003e
+
+
+    #svela_card
+        background-color: #F77450
+        background-image: url("/assets/dq/wavylines.png")
+        background-blend-mode: screen
+
+
+    #mold_card
+        background-image: linear-gradient(#311d4975 70%, #241731d6), url("/assets/mold/mold.gif")
+        background-color: #2b2235
+        background-blend-mode: screen
+
+    .in-prog
+        color: #ffdab4
 
 @keyframes slideleft
     0%
@@ -269,7 +289,7 @@ a:hover
             border-radius: 6px 6px 0 0
             background-size: cover
             background-position: center
-            filter: grayscale(70%)
+            // filter: grayscale(70%)
             transition: 200ms ease
 
         .dq_image
@@ -285,6 +305,15 @@ a:hover
             background-position: top
         .alche_image
             background-image: linear-gradient(#92d81845 70%, #92d818bc), url("assets/alchemedia/stand.jpg")
+
+        .svela_image
+            background-color: #F77450
+            background-image: url("/assets/dq/wavylines.png")
+            background-blend-mode: screen
+
+        .mold_image
+            background-color: #2b2235
+            background-image: linear-gradient(#311d4975 70%, #241731d6), url("/assets/mold/mold.png")
 
     .related_link:hover
         border: 2px solid #000

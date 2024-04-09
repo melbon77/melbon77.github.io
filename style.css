@@ -117,7 +117,7 @@ a:hover {
 }
 .work_collection div:not(:first-child, :last-child) {
   /*! avoids spacer divs */
-  background-color: lightblue;
+  background-color: #3FA3DF;
   min-width: 250px;
   width: 100%;
   border-radius: 16px;
@@ -148,6 +148,7 @@ a:hover {
   flex-shrink: 0;
 }
 .work_collection a {
+  color: #fff;
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -156,12 +157,20 @@ a:hover {
 }
 .work_collection h2 {
   font-weight: 600;
-  padding-left: 16px;
+  padding-inline: 16px;
+  margin-block: 4px;
+}
+.work_collection p {
+  font-size: 1em;
+  padding-inline: 16px;
+  margin-top: 4px;
+}
+.work_collection .card {
+  background-size: cover;
 }
 .work_collection #alche_card {
   background-image: linear-gradient(rgba(146, 216, 24, 0.2705882353) 70%, rgba(146, 216, 24, 0.737254902)), url("/assets/alchemedia/wires.jpg");
   background-color: #92d818;
-  background-size: cover;
 }
 .work_collection #alche_card a {
   color: #fff;
@@ -170,7 +179,6 @@ a:hover {
 .work_collection #dq_card {
   background-image: url("/assets/dq_card.webp");
   background-color: #3FA3DF;
-  background-size: cover;
   background-position: left center;
   overflow: hidden;
 }
@@ -181,7 +189,6 @@ a:hover {
 .work_collection #id_card {
   background-image: url("/assets/id_card.webp");
   background-color: #536375;
-  background-size: cover;
   background-position: left center;
   overflow: hidden;
 }
@@ -190,17 +197,14 @@ a:hover {
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
 }
 .work_collection #webster_card {
-  background-image: url("/assets/webster_mockup.webp");
-  background-size: cover;
+  background-image: linear-gradient(rgba(242, 254, 255, 0.0235294118) 70%, rgba(163, 234, 241, 0.737254902)), url("/assets/webster_mockup.webp");
 }
 .work_collection #webster_card a {
-  color: #000;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2431372549);
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
 }
 .work_collection #quill_card {
   background-image: url("/assets/quill_card.png");
   background-color: #85CACD;
-  background-size: cover;
 }
 .work_collection #quill_card a {
   color: #000;
@@ -209,11 +213,23 @@ a:hover {
 .work_collection #swirl_card {
   background-image: linear-gradient(rgba(251, 204, 85, 0.8745098039), rgba(255, 196, 47, 0.9568627451)), url("/assets/swirl_letters.webp");
   background-color: #fbcc55;
-  background-size: cover;
 }
 .work_collection #swirl_card a {
   color: #000;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2431372549);
+}
+.work_collection #svela_card {
+  background-color: #F77450;
+  background-image: url("/assets/dq/wavylines.png");
+  background-blend-mode: screen;
+}
+.work_collection #mold_card {
+  background-image: linear-gradient(rgba(49, 29, 73, 0.4588235294) 70%, rgba(36, 23, 49, 0.8392156863)), url("/assets/mold/mold.gif");
+  background-color: #2b2235;
+  background-blend-mode: screen;
+}
+.work_collection .in-prog {
+  color: #ffdab4;
 }
 
 @keyframes slideleft {
@@ -260,7 +276,6 @@ a:hover {
   border-radius: 6px 6px 0 0;
   background-size: cover;
   background-position: center;
-  filter: grayscale(70%);
   transition: 200ms ease;
 }
 .other_projects_section .related_link .dq_image {
@@ -281,6 +296,15 @@ a:hover {
 }
 .other_projects_section .related_link .alche_image {
   background-image: linear-gradient(rgba(146, 216, 24, 0.2705882353) 70%, rgba(146, 216, 24, 0.737254902)), url("assets/alchemedia/stand.jpg");
+}
+.other_projects_section .related_link .svela_image {
+  background-color: #F77450;
+  background-image: url("/assets/dq/wavylines.png");
+  background-blend-mode: screen;
+}
+.other_projects_section .related_link .mold_image {
+  background-color: #2b2235;
+  background-image: linear-gradient(rgba(49, 29, 73, 0.4588235294) 70%, rgba(36, 23, 49, 0.8392156863)), url("/assets/mold/mold.png");
 }
 .other_projects_section .related_link:hover {
   border: 2px solid #000;

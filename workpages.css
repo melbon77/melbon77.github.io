@@ -222,6 +222,17 @@
   box-shadow: 6px 6px #92d818;
 }
 
+.svela_wrapper .work_banner {
+  background-image: url("/assets/dq/wavylines.png");
+  background-color: #F77450;
+  background-blend-mode: screen;
+}
+
+.mold_wrapper .work_banner {
+  background-image: url("/assets/mold/mold.png");
+  background-color: #27153b;
+}
+
 /* Small Screens */
 @media screen and (max-width: 800px) {
   .back_btn {
