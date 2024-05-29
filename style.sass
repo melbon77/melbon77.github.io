@@ -262,74 +262,104 @@ a:hover
 
     .holder
         display: flex
-        flex-direction: row
-        justify-content: space-between
-        gap: 20px
+        flex-direction: column
+        // gap: 20px
+        // display: grid
+        // grid-template-columns: auto
+        margin-block: 48px
 
     .related_link
-        // background-color: #e8ecee
-        border: 2px solid #d2d2d2
-        width: 100%
-        height: fit-content
-        padding-bottom: 16px
-        border-radius: 8px
-        text-align: center
-        transition: 200ms ease
+        border-bottom: 1px solid #000
+        background-color: none
+        // transition: 200ms ease
+
 
         a
-            // padding-block: 50px
+            // background-color: blue
+            display: flex
+            align-content: center
+            display: block
             width: 100%
-            color: #000
-            text-decoration: none
-            font-size: 18px
-            font-weight: 400
-            transition: 200ms ease
-
-
-        .image
-            width: 100%
-            height: 200px
-            margin-bottom: 16px
-            border-radius: 6px 6px 0 0
-            background-size: cover
-            background-position: center
-            // filter: grayscale(70%)
-            transition: 200ms ease
-
-        .dq_image
-            background-image: linear-gradient(#3589bd80, #3891c8d0), url("assets/dq_card.webp")
-        .id_image
-            background-image: linear-gradient(#a591c25e, #67317e98), url("assets/id_card.webp")
-        .swirl_image
-            background-image: linear-gradient(#fbcc55df, #ffc42ff4), url("assets/swirl_letters.webp")
-        .webster_image
-            background-image: linear-gradient(#83dae963, #2eacbfb9), url("assets/webster_mockup.webp")
-        .quill_image
-            background-image: linear-gradient(#c4e0e199, #50dadfb3), url("assets/quill_card.png")
-            background-position: top
-        .alche_image
-            background-image: linear-gradient(#92d81845 70%, #92d818bc), url("assets/alchemedia/stand.jpg")
-
-        .svela_image
-            background-image: linear-gradient(#e7c62414, #e7c7245d), url("/assets/svela/cover.jpg")
-            background-color: #739A42
-
-        .mold_image
-            // background-color: #2b2235
-            // background-image: linear-gradient(#311d4975 70%, #241731d6), url("/assets/mold/mold.png")
-            background-image: linear-gradient(#4c0d9492, #27153b26 85%, #3908717e), url("/assets/mold/table_wide.png")
-            // background-image: url("/assets/mold/table_close.jpg")
-            background-color: #27153b
+            height: 100%
+            height: 56px
 
     .related_link:hover
-        border: 2px solid #000
-        box-shadow: 6px 6px #4d98d8
+        background-color: #ececec
 
         a
-            font-weight: 600
+            text-decoration: none
 
-        .image
-            filter: grayscale(0%)
+
+    // .holder
+    //     display: flex
+    //     flex-direction: row
+    //     justify-content: space-between
+    //     gap: 20px
+
+    // .related_link
+    //     border: 2px solid #d2d2d2
+    //     width: 100%
+    //     height: fit-content
+    //     padding-bottom: 16px
+    //     border-radius: 8px
+    //     text-align: center
+    //     transition: 200ms ease
+
+    //     a
+    //         width: 100%
+    //         color: #000
+    //         text-decoration: none
+    //         font-size: 18px
+    //         font-weight: 400
+    //         transition: 200ms ease
+
+
+    //     .image
+    //         width: 100%
+    //         height: 200px
+    //         margin-bottom: 16px
+    //         border-radius: 6px 6px 0 0
+    //         background-size: cover
+    //         background-position: center
+    //         // filter: grayscale(70%)
+    //         transition: 200ms ease
+
+    //     .dq_image
+    //         background-image: linear-gradient(#3589bd80, #3891c8d0), url("assets/dq_card.webp")
+    //     .id_image
+    //         background-image: linear-gradient(#a591c25e, #67317e98), url("assets/id_card.webp")
+    //     .swirl_image
+    //         background-image: linear-gradient(#fbcc55df, #ffc42ff4), url("assets/swirl_letters.webp")
+    //     .webster_image
+    //         background-image: linear-gradient(#83dae963, #2eacbfb9), url("assets/webster_mockup.webp")
+    //     .quill_image
+    //         background-image: linear-gradient(#c4e0e199, #50dadfb3), url("assets/quill_card.png")
+    //         background-position: top
+    //     .alche_image
+    //         background-image: linear-gradient(#92d81845 70%, #92d818bc), url("assets/alchemedia/stand.jpg")
+
+    //     .svela_image
+    //         background-image: linear-gradient(#e7c62414, #e7c7245d), url("/assets/svela/cover.jpg")
+    //         background-color: #739A42
+
+    //     .mold_image
+    //         // background-color: #2b2235
+    //         // background-image: linear-gradient(#311d4975 70%, #241731d6), url("/assets/mold/mold.png")
+    //         background-image: linear-gradient(#4c0d9492, #27153b26 85%, #3908717e), url("/assets/mold/table_wide.png")
+    //         // background-image: url("/assets/mold/table_close.jpg")
+    //         background-color: #27153b
+
+    // .related_link:hover
+    //     border: 2px solid #000
+    //     box-shadow: 6px 6px #4d98d8
+
+    //     a
+    //         font-weight: 600
+
+    //     .image
+    //         filter: grayscale(0%)
+
+
 
 
 .footer
@@ -415,14 +445,14 @@ a:hover
     .other_projects_section
         padding: 32px 20px
 
-        .holder
-            flex-direction: column
+        // .holder
+        //     flex-direction: column
 
-        .related_link
-            padding-bottom: 8px
-            .image
-                height: 120px
-                margin-bottom: 8px
+        // .related_link
+        //     padding-bottom: 8px
+        //     .image
+        //         height: 120px
+        //         margin-bottom: 8px
 
     .extras_body
         margin: 24px
