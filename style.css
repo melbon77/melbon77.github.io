@@ -169,22 +169,20 @@ a:hover {
   background-size: cover;
 }
 .work_collection #alche_card {
-  background-image: linear-gradient(rgba(146, 216, 24, 0.2705882353) 70%, rgba(146, 216, 24, 0.737254902)), url("/assets/alchemedia/wires.jpg");
+  background-image: linear-gradient(rgba(146, 216, 24, 0.2705882353) 70%, rgba(111, 169, 11, 0.737254902)), url("/assets/alchemedia/wires.jpg");
   background-color: #92d818;
 }
 .work_collection #alche_card a {
   color: #fff;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
 }
 .work_collection #dq_card {
-  background-image: url("/assets/dq_card.webp");
+  background-image: linear-gradient(rgba(22, 112, 209, 0.0235294118) 70%, rgba(8, 78, 128, 0.737254902)), url("/assets/dq_card.webp");
   background-color: #3FA3DF;
   background-position: left center;
   overflow: hidden;
 }
 .work_collection #dq_card a {
   color: #fff;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
 }
 .work_collection #id_card {
   background-image: url("/assets/id_card.webp");
@@ -197,10 +195,7 @@ a:hover {
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
 }
 .work_collection #webster_card {
-  background-image: linear-gradient(rgba(242, 254, 255, 0.0235294118) 70%, rgba(163, 234, 241, 0.737254902)), url("/assets/webster_mockup.webp");
-}
-.work_collection #webster_card a {
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5019607843);
+  background-image: linear-gradient(rgba(242, 254, 255, 0.0235294118) 70%, rgba(27, 146, 157, 0.737254902)), url("/assets/webster_mockup.webp");
 }
 .work_collection #quill_card {
   background-image: url("/assets/quill_card.png");
@@ -208,7 +203,6 @@ a:hover {
 }
 .work_collection #quill_card a {
   color: #000;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2431372549);
 }
 .work_collection #swirl_card {
   background-image: linear-gradient(rgba(251, 204, 85, 0.8745098039), rgba(255, 196, 47, 0.9568627451)), url("/assets/swirl_letters.webp");
@@ -223,9 +217,8 @@ a:hover {
   background-image: url("/assets/svela/cover.jpg");
 }
 .work_collection #mold_card {
-  background-image: linear-gradient(rgba(49, 29, 73, 0.4588235294) 70%, rgba(36, 23, 49, 0.8392156863)), url("/assets/mold/mold.gif");
-  background-color: #2b2235;
-  background-blend-mode: screen;
+  background-image: linear-gradient(rgba(140, 95, 192, 0.6980392157) 5%, rgba(39, 21, 59, 0.0431372549) 60%, rgba(59, 6, 119, 0.8431372549)), url("/assets/mold/table_close.jpg");
+  background-color: #27153b;
 }
 .work_collection .in-prog {
   color: #ffdab4;
@@ -297,13 +290,12 @@ a:hover {
   background-image: linear-gradient(rgba(146, 216, 24, 0.2705882353) 70%, rgba(146, 216, 24, 0.737254902)), url("assets/alchemedia/stand.jpg");
 }
 .other_projects_section .related_link .svela_image {
-  background-color: #F77450;
-  background-image: url("/assets/dq/wavylines.png");
-  background-blend-mode: screen;
+  background-image: linear-gradient(rgba(231, 198, 36, 0.0784313725), rgba(231, 199, 36, 0.3647058824)), url("/assets/svela/cover.jpg");
+  background-color: #739A42;
 }
 .other_projects_section .related_link .mold_image {
-  background-color: #2b2235;
-  background-image: linear-gradient(rgba(49, 29, 73, 0.4588235294) 70%, rgba(36, 23, 49, 0.8392156863)), url("/assets/mold/mold.png");
+  background-image: linear-gradient(rgba(76, 13, 148, 0.5725490196), rgba(39, 21, 59, 0.1490196078) 85%, rgba(57, 8, 113, 0.4941176471)), url("/assets/mold/table_wide.png");
+  background-color: #27153b;
 }
 .other_projects_section .related_link:hover {
   border: 2px solid #000;

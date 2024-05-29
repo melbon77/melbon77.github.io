@@ -124,7 +124,6 @@
 .content {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 16px;
 }
 .content img, .content video {
@@ -142,6 +141,10 @@
   justify-content: center;
   gap: 16px;
   padding-inline: 16px;
+}
+
+.horizontal .content {
+  align-items: center;
 }
 
 /*! Heuristic images positioning */
@@ -231,7 +234,7 @@
 }
 
 .mold_wrapper .work_banner {
-  background-image: url("/assets/mold/mold.png");
+  background-image: linear-gradient(rgba(76, 13, 148, 0.3960784314), rgba(39, 21, 59, 0), rgba(57, 8, 113, 0.5019607843)), url("/assets/mold/table_close.jpg");
   background-color: #27153b;
 }
 
