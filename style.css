@@ -121,7 +121,6 @@ a:hover {
 }
 .work_collection div:not(:first-child, :last-child) {
   /*! avoids spacer divs */
-  background-color: #3FA3DF;
   min-width: 250px;
   width: 100%;
   border-radius: 16px;
@@ -226,7 +225,7 @@ a:hover {
 }
 .work_collection #rock_card {
   background-image: linear-gradient(rgba(231, 104, 172, 0.3921568627), rgba(225, 31, 133, 0) 20%, rgba(225, 31, 133, 0) 70%, rgba(238, 3, 128, 0.568627451)), url("/assets/rocks/zine.jpg");
-  background-color: #27153b;
+  background-color: #ee0380;
 }
 .work_collection .in-prog {
   color: #ffdab4;
