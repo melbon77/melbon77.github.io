@@ -224,6 +224,10 @@ a:hover {
   background-image: linear-gradient(rgba(140, 95, 192, 0.6980392157) 5%, rgba(39, 21, 59, 0.0431372549) 60%, rgba(59, 6, 119, 0.8431372549)), url("/assets/mold/table_close.jpg");
   background-color: #27153b;
 }
+.work_collection #rock_card {
+  background-image: linear-gradient(rgba(231, 104, 172, 0.3921568627), rgba(225, 31, 133, 0) 20%, rgba(225, 31, 133, 0) 70%, rgba(238, 3, 128, 0.568627451)), url("/assets/rocks/zine.jpg");
+  background-color: #27153b;
+}
 .work_collection .in-prog {
   color: #ffdab4;
 }

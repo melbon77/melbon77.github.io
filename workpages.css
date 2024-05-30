@@ -140,7 +140,6 @@
   flex-direction: row;
   justify-content: center;
   gap: 16px;
-  padding-inline: 16px;
 }
 
 .horizontal .content {
@@ -235,6 +234,11 @@
 
 .mold_wrapper .work_banner {
   background-image: linear-gradient(rgba(76, 13, 148, 0.3960784314), rgba(39, 21, 59, 0), rgba(57, 8, 113, 0.5019607843)), url("/assets/mold/table_close.jpg");
+  background-color: #27153b;
+}
+
+.rocks_wrapper .work_banner {
+  background-image: linear-gradient(rgba(225, 31, 134, 0.2941176471), rgba(225, 31, 133, 0) 20%, rgba(225, 31, 133, 0) 80%, rgba(225, 31, 134, 0.5019607843)), url("/assets/rocks/zine.jpg");
   background-color: #27153b;
 }
 
