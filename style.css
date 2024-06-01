@@ -321,8 +321,21 @@ a:hover {
   margin-block: 15rem;
 }
 
+.bubble {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 14px 24px;
+  margin-top: 32px;
+  border: 1px solid #a7a7a7;
+  border-radius: 8px;
+}
+.bubble img {
+  float: left;
+  padding-right: 6px;
+}
+
 /* Small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #extras_link, #contact_link, #resume_link {
     padding-left: 8px;
   }
@@ -355,10 +368,16 @@ a:hover {
   .extras_section {
     margin-top: 50px;
   }
+  #about_me_top #headshot {
+    width: 50%;
+  }
 }
 /* Medium screens */
 @media screen and (max-width: 1200px) {
   .other_projects_section {
     padding-inline: 40px;
+  }
+  #about_me_top {
+    margin-top: 32px;
   }
 }/*# sourceMappingURL=style.css.map */
