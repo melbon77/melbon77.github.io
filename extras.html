@@ -6,41 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extras - Melanie Boncaro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="workpages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" defer></script>
+    <script src="js/extrasInteraction.js" defer></script>
 </head>
+<style>
+    html {
+        margin: 0;
+    }
+    body {
+        background-size: 100% 100vh;
+        background-repeat: no-repeat;
+        /* background-size: cover;
+        background-position: center; */
+        backdrop-filter: blur(10px) brightness(110%);
+        transition:  400ms ease;
+    }
+</style>
 <body>
-    <div class="extras_body">
-        <nav class="navbar">
-            <a id="name_link" href="/index.html">Melanie Boncaro</a>
-            <div>
-                <!-- <a id="work_link" href="/index.html">Work</a> -->
-                <a id="extras_link" href="/extras.html">Extras</a>
-                <a id="contact_link" href="/about-me.html">About Me</a>
-                <a id="resume_link" href="/assets/Melanie_Boncaro_Resume.pdf">Resume</a>
+    <div id="extras_body" class="extras_body">
+        <div id="extras_top" class="extras_top">
+            <nav class="navbar">
+                <a id="name_link" href="/index.html">Melanie Boncaro</a>
+                <div>
+                    <!-- <a id="work_link" href="/index.html">Work</a> -->
+                    <a id="extras_link" href="/extras.html">Extras</a>
+                    <a id="contact_link" href="/about-me.html">About Me</a>
+                    <a id="resume_link" href="/assets/Melanie_Boncaro_Resume.pdf">Resume</a>
+                </div>
+            </nav>
+    
+            <br>
+            <div class="extras_header">
+                <h1 id="extras_title">Extras!</h1>
+                <div class="section_links">
+                    <a id="animation_link" href="#animation"><h2>Animation</h2></a>
+                    <a id="3d_link" href="#3d"><h2>3D</h2></a>
+                    <a id="graphic_link" href="#graphic_design"><h2>Graphic Design</h2></a>
+                    <a id="traditional_link" href="#traditional"><h2>Traditional</h2></a>
+                </div>
             </div>
-        </nav>
-
-        <br>
-        <div class="extras_header">
-            <h1>Extras!</h1>
         </div>
 
         <div class="extras_wrapper">
 
             <!-- Animation -->
-            <div class="extras_section">
-                <h2>Animation</h2>
-                <div class="extras_holder animation">
-                    <div class="extras_item">
-                        <video controls src="assets/extras/paint_comm.mp4" poster="assets/extras/paint_poster.png"></video>
-                        <p>Winsor & Newton Commercial</p>
-                    </div>
+            <div id="animation" class="work_section vertical">
+                <div class="work_desc">
+                    <h2>Animation</h2>
+                </div>
+                <div class="content">
                     <div class="extras_item">
                         <video controls src="assets/extras/surreal.mp4" poster="assets/extras/surreal_poster.png"></video>
                         <p>Surreal World</p>
                     </div>
+                </div>
+                <div class="content">
+                    <div class="extras_item">
+                        <video controls src="assets/extras/paint_comm.mp4" poster="assets/extras/paint_poster.png"></video>
+                        <p>Winsor & Newton Commercial</p>
+                    </div>
+                </div>
+                <div class="content">
                     <div class="extras_item">
                         <video controls src="assets/extras/abstract_anim.mp4" poster="assets/extras/abstract_poster.png"></video>
                         <p>Abstract Animation</p>
@@ -49,26 +79,41 @@
             </div>
 
             <!-- 3D Work -->
-            <div class="extras_section">
-                <h2>3D Work</h2>
-                <div class="extras_holder 3d_work">
+            <div id="3d" class="work_section vertical">
+                <div class="work_desc">
+                    <h2>3D Work</h2>
+                </div>
+                <div class="content">
+                    <div class="extras_item">
+                        <video controls src="assets/extras/shitshow.mp4"></video>
+                    </div>
+                </div>
+                <div class="content">
                     <div class="extras_item">
                         <img src="assets/extras/guitar.png">
                     </div>
                     <div class="extras_item">
                         <video controls src="assets/extras/katana.mp4"></video>
                     </div>
-
                 </div>
             </div>
 
             <!-- Graphic Design -->
-            <div class="extras_section">
-                <h2>Graphic Design</h2>
-                <div class="extras_holder graphic">
+            <div id="graphic_design" class="work_section vertical">
+                <div class="work_desc">
+                    <h2>Graphic Design</h2>
+                </div>
+
+                <div class="content">
+                    <div class="extras_item">
+                        <img src="assets/extras/infographic.png">
+                    </div>
                     <div class="extras_item">
                         <img src="assets/extras/diamond1.png">
                     </div>
+                </div>
+
+                <div class="content">
                     <div class="extras_item">
                         <img src="assets/extras/diamond2.png">
                     </div>
@@ -82,9 +127,11 @@
             </div>
 
             <!-- Traditional -->
-            <div class="extras_section">
-                <h2>Traditional</h2>
-                <div class="extras_holder traditional">
+            <div id="traditional" class="work_section vertical">
+                <div class="work_desc">
+                    <h2>Traditional</h2>
+                </div>
+                <div class="content">
                     <div class="extras_item">
                         <img src="assets/extras/ink1.jpg">
                     </div>
@@ -92,13 +139,18 @@
                         <img src="assets/extras/ink2.jpg">
                     </div>
                     <div class="extras_item">
-                        <img src="assets/extras/skull.jpg">
+                        <img src="assets/extras/water.jpg">
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="assets/extras/skull.jpg">
+                </div>
+                <div class="content">
+                    <div class="extras_item">
+                        <img src="assets/extras/val.jpg">
                     </div>
                     <div class="extras_item">
                         <img src="assets/extras/eye.jpg">
-                    </div>
-                    <div class="extras_item">
-                        <img src="assets/extras/water.jpg">
                     </div>
                 </div>
             </div>

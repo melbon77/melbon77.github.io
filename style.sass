@@ -16,7 +16,8 @@ p
 
 a
     text-decoration: none
-    color: #a7a7a7
+    // color: #a7a7a7
+    color: #9a9baa
     transition: 200ms ease
 a:hover
     text-decoration: underline
@@ -249,6 +250,15 @@ a:hover
         background-image: linear-gradient(#e768ac64, #E11F8500 20%, #E11F8500 70%, #ee038091), url("/assets/rocks/zine.jpg")
         background-color: #ee0380
 
+    // #fcc8da
+    // #f871a0
+    // #a0e4e8
+    // #46cbd2
+    // #ffe7ac
+    // #f7c545
+    // #d7f8ae
+    // #97e637
+
 
     .in-prog
         color: #ffdab4
@@ -388,7 +398,8 @@ a:hover
 
 
 .extras_body
-    margin: 40px
+    margin: 0 40px 40px 40px
+    padding-top: 40px
 .extras_section
     margin-block: 40px 100px
 .extras_holder
@@ -410,11 +421,52 @@ a:hover
             max-height: 20rem
             flex-grow: 1
             object-fit: cover
-            
 
+
+.extras_header
+    height: 60vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    #extras_title
+        padding-left: 8px
+
+    .section_links
+        display: flex
+        flex-direction: row
+        gap: 24px
+        a
+            padding: 8px
+            // background-size: 0
+            // background-position: left
+            // background-repeat: no-repeat
+            // transition: .4s, background-postion 0s
+            transition: 400ms ease
+
+            h2
+                margin: 0
+
+        // #animation_link
+        //     background-image: linear-gradient(#f871a0 0 0)
+        // #3d_link
+        //     background-image: linear-gradient(#a0e4e8 0 0)
+        // #graphic_link
+        //     background-image: linear-gradient(#f7c545 0 0)
+        // #traditional_link
+        //     background-image: linear-gradient(#97e637 0 0)
+
+        a:hover
+            text-decoration: none
+            // background-size: 100%
+            // background-position: right
+
+            
 // .extras_item
 //     img, video
 //         height: 100%
+
+
 .contact_wrapper
     margin: 40px
 .contact_main
@@ -476,14 +528,22 @@ a:hover
         //         margin-bottom: 8px
 
     .extras_body
-        margin: 24px
+        margin: 0 24px 24px 24px
+        padding-top: 24px
 
-    .extras_holder div
-        img, video
-            height: 300px
+    // .extras_holder div
+    //     img, video
+    //         height: 300px
 
-    .extras_section
-        margin-top: 50px
+    // .extras_section
+    //     margin-top: 50px
+
+    .extras_header
+        height: 90vh
+    .extras_header .section_links
+        flex-direction: column
+        gap: 0
+
 
     #about_me_top #headshot
         width: 50%

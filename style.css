@@ -18,7 +18,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #a7a7a7;
+  color: #9a9baa;
   transition: 200ms ease;
 }
 
@@ -289,7 +289,8 @@ a:hover {
 }
 
 .extras_body {
-  margin: 40px;
+  margin: 0 40px 40px 40px;
+  padding-top: 40px;
 }
 
 .extras_section {
@@ -308,6 +309,31 @@ a:hover {
   flex-grow: 1;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.extras_header {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.extras_header #extras_title {
+  padding-left: 8px;
+}
+.extras_header .section_links {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.extras_header .section_links a {
+  padding: 8px;
+  transition: 400ms ease;
+}
+.extras_header .section_links a h2 {
+  margin: 0;
+}
+.extras_header .section_links a:hover {
+  text-decoration: none;
 }
 
 .contact_wrapper {
@@ -360,13 +386,15 @@ a:hover {
     padding: 32px 20px;
   }
   .extras_body {
-    margin: 24px;
+    margin: 0 24px 24px 24px;
+    padding-top: 24px;
   }
-  .extras_holder div img, .extras_holder div video {
-    height: 300px;
+  .extras_header {
+    height: 90vh;
   }
-  .extras_section {
-    margin-top: 50px;
+  .extras_header .section_links {
+    flex-direction: column;
+    gap: 0;
   }
   #about_me_top #headshot {
     width: 50%;

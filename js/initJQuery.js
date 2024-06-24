@@ -25,4 +25,4 @@ async function initAOS() {
 }
 
 initJQuery();
-initAOS();
+// initAOS();
