@@ -333,7 +333,7 @@ a:hover {
   margin: 0;
 }
 .extras_header .section_links a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .contact_wrapper {
