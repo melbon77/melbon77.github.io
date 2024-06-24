@@ -319,6 +319,7 @@ a:hover {
 }
 .extras_header #extras_title {
   padding-left: 8px;
+  font-size: 64px;
 }
 .extras_header .section_links {
   display: flex;
