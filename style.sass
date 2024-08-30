@@ -123,8 +123,9 @@ a:hover
     overflow: scroll
     scrollbar-width: thin
 
-    div:not(:first-child, :last-child) 
+    // div:not(:first-child, :last-child) 
         /*! avoids spacer divs */
+    .card
         // background-color: #3FA3DF
         // display: flex
         // flex-shrink: 0
@@ -136,23 +137,37 @@ a:hover
         border-radius: 16px
         // align-content: start
         // flex-direction: column-reverse
+        background-size: cover
         background-position: center center
         transition: 200ms ease
 
-    div:nth-child(1 of .card)
+    :nth-child(1 of .card)
         animation: .8s ease 1.6s slideleft both
-    div:nth-child(2 of .card)
+    :nth-child(2 of .card)
         animation: .8s ease 1.8s slideleft both
-    div:nth-child(3 of .card)
+    :nth-child(3 of .card)
         animation: .8s ease 2s slideleft both
-    div:nth-child(4 of .card)
-        animation: .8s ease 2.2s slideleft both
-    div:nth-child(5 of .card)
-        animation: .8s ease 2.4s slideleft both
 
-    div:not(:first-child, :last-child):hover
+    // div:not(:first-child, :last-child):hover
+    .card:hover
         box-shadow: 2px 4px 8px #00000067
         translate: 0 -10px
+
+    .sub_section
+        display: flex
+        flex-direction: column
+        gap: 32px
+
+        .card
+            height: 100%
+
+        :nth-child(1 of .card)
+            animation: .8s ease 2.3s slideleft both !important
+        :nth-child(2 of .card)
+            animation: .8s ease 2.5s slideleft both !important
+        :nth-child(3 of .card)
+            animation: .8s ease 2.7s slideleft both !important
+
 
     .spacer
         width: 8px
@@ -180,9 +195,6 @@ a:hover
         padding-inline: 16px
         margin-top: 4px
 
-
-    .card
-        background-size: cover
 
 
     #alche_card
@@ -249,6 +261,9 @@ a:hover
     #rock_card
         background-image: linear-gradient(#e768ac64, #E11F8500 20%, #E11F8500 70%, #ee038091), url("/assets/rocks/zine.jpg")
         background-color: #ee0380
+
+    #extras_card
+        background-image: linear-gradient(#a47dd1, #572393)
 
     // #fcc8da
     // #f871a0
@@ -431,7 +446,6 @@ a:hover
 
     #extras_title
         padding-left: 8px
-
         font-size: 64px
 
     .section_links

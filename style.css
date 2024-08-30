@@ -119,32 +119,43 @@ a:hover {
   overflow: scroll;
   scrollbar-width: thin;
 }
-.work_collection div:not(:first-child, :last-child) {
-  /*! avoids spacer divs */
+.work_collection .card {
   min-width: 250px;
   width: 100%;
   border-radius: 16px;
+  background-size: cover;
   background-position: center center;
   transition: 200ms ease;
 }
-.work_collection div:nth-child(1 of .card) {
+.work_collection :nth-child(1 of .card) {
   animation: 0.8s ease 1.6s slideleft both;
 }
-.work_collection div:nth-child(2 of .card) {
+.work_collection :nth-child(2 of .card) {
   animation: 0.8s ease 1.8s slideleft both;
 }
-.work_collection div:nth-child(3 of .card) {
+.work_collection :nth-child(3 of .card) {
   animation: 0.8s ease 2s slideleft both;
 }
-.work_collection div:nth-child(4 of .card) {
-  animation: 0.8s ease 2.2s slideleft both;
-}
-.work_collection div:nth-child(5 of .card) {
-  animation: 0.8s ease 2.4s slideleft both;
-}
-.work_collection div:not(:first-child, :last-child):hover {
+.work_collection .card:hover {
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4039215686);
   translate: 0 -10px;
+}
+.work_collection .sub_section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.work_collection .sub_section .card {
+  height: 100%;
+}
+.work_collection .sub_section :nth-child(1 of .card) {
+  animation: 0.8s ease 2.3s slideleft both !important;
+}
+.work_collection .sub_section :nth-child(2 of .card) {
+  animation: 0.8s ease 2.5s slideleft both !important;
+}
+.work_collection .sub_section :nth-child(3 of .card) {
+  animation: 0.8s ease 2.7s slideleft both !important;
 }
 .work_collection .spacer {
   width: 8px;
@@ -167,9 +178,6 @@ a:hover {
   font-size: 1em;
   padding-inline: 16px;
   margin-top: 4px;
-}
-.work_collection .card {
-  background-size: cover;
 }
 .work_collection #alche_card {
   background-image: linear-gradient(rgba(146, 216, 24, 0.2705882353) 70%, rgba(111, 169, 11, 0.737254902)), url("/assets/alchemedia/wires.jpg");
@@ -226,6 +234,9 @@ a:hover {
 .work_collection #rock_card {
   background-image: linear-gradient(rgba(231, 104, 172, 0.3921568627), rgba(225, 31, 133, 0) 20%, rgba(225, 31, 133, 0) 70%, rgba(238, 3, 128, 0.568627451)), url("/assets/rocks/zine.jpg");
   background-color: #ee0380;
+}
+.work_collection #extras_card {
+  background-image: linear-gradient(#a47dd1, #572393);
 }
 .work_collection .in-prog {
   color: #ffdab4;
