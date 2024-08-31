@@ -17,7 +17,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Custom leaf icon for location markers
 let leafIcon = L.icon({
-    iconUrl: 'http://solace.ist.rit.edu/~mb2317/iste252/top_ten_trails/assets/images/leaf3.png',
+    iconUrl: 'http://melboncaro.work/development/top_ten_trails/assets/images/leaf3.png',
     // iconUrl: '../images/leaf2.png',
     iconSize: [56, 50],
     iconAnchor: [28, 50],
